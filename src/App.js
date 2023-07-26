@@ -7,6 +7,7 @@ import { Skills } from './Components/Pages/Skills.js'
 import { Projects } from './Components/Pages/Projects.js'
 import { Career } from './Components/Pages/Career.js'
 import { About } from './Components/Pages/About.js'
+import { Footer } from './Components/Footer.js'
 
 
 function App() {
@@ -22,13 +23,10 @@ function App() {
           <Route path='/about' element={<About/>} />
         </Routes>
       </div>
+      <Footer/>
     </div>
   );
 }
 
 export default App;
-
-// REMEMBER TO ADD CREDITS FOR RELEVANT IMAGES
-// <a href="https://www.vecteezy.com/free-vector/coding">Coding Vectors by Vecteezy</a>
-// 2 Images from here
 
