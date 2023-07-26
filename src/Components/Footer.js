@@ -22,7 +22,7 @@ export const Footer = () => {
                         <div className='logo'>
                             <a href='#home'>  <img src={logo} alt=''/> </a>
                         </div>
-                        <div className='wrap'>
+                        <div className='wrapping'>
                         <div className='social-icon icon-footer'>
                             <a href='#>'> <img src={navIcon1} alt=''/> </a>
                             <a href='#>'> <img src={discord} alt=''/> </a>

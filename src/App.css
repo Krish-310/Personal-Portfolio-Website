@@ -886,7 +886,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border: 1px solid #fff;
 }
 
-.wrap {
+.wrapping {
   display: flex;
   align-items: center;
   justify-content: center;
