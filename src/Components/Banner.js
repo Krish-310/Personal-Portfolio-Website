@@ -65,10 +65,12 @@ export const Banner = () => {
                         fields of Web Development, Software Development and Artificial Intelligence. Feel free to
                         get in touch with me anytime!
                     </p>
-                    <button type="button" className="btn btn-dark" onClick={() => console.log('connect')}> Let's Connect <ArrowRightCircle size={25}/> </button>
+                    <button type='button' className="btn btn-dark" onClick={() => console.log("Connect")}> 
+                        <span> Let's Connect </span> <ArrowRightCircle size={25}/> 
+                    </button>
                 </Col>
                 <Col xs={12} md={6} xl={5}>
-                    <img src={headImage} alt="Header Img"/> {/* NOTE: This image need to be included in the credits */}
+                    <img src={headImage} alt="Header Img"/>
                 </Col>
             </Row>
         </Container>

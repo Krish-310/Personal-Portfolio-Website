@@ -3,6 +3,16 @@ Hello!
 Welcome to my Personal Portfolio Website!
 
 
+
+
+Fixes Pending:
+- Connect Button on Banner
+- Page length issue
+- Download resume button
+- AWS lambda to setup the contact form server
+
+
+
 ### Running the Project
 
 In the project directory, you can run:
