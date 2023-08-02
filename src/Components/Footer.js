@@ -25,7 +25,7 @@ export const Footer = () => {
                         <div className='wrapping'>
                         <div className='social-icon icon-footer'>
                             <a href='http://www.linkedin.com/in/krish310/'> <img src={navIcon1} alt=''/> </a>
-                            <a href='' onClick={(e) => alert("AHA! I'm not giving you my Discord! Here, enjoy a page refresh :)")}> <img src={discord} alt=''/> </a>
+                            <a href='#>' onClick={(e) => alert("AHA! I'm not giving you my Discord! Have a nice day :)")}> <img src={discord} alt=''/> </a>
                             <a href='https://www.instagram.com/krishy_310/'> <img src={instagram} alt=''/> </a>
                             <a href='https://github.com/Krish-310'> <img src={github} alt=''/> </a>
                         </div>
