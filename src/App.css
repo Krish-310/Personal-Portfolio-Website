@@ -312,6 +312,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-color: #121212;
   border: 2px solid rgba(255, 255, 255, 0.5);
 }
+.banner button:hover {
+  background-color: #000;
+  border-color: #fff;
+}
 .banner button svg {
   font-size: 25px;
   margin-left: 10px;
@@ -915,9 +919,112 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 
+.centred-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.values {
+  padding-top: 70px;
+}
+
+.value-container {
+  position : relative;
+  width : 1100px;
+  display : flex;
+  align-items : center;
+  justify-content : center;
+  padding : 30px;  
+  height: 320px;
+}
+
+.value-container .value-card {
+  position: relative;
+  max-width : 300px;
+  height : 215px;  
+  background-color : #fff;
+  margin : 30px 10px;
+  padding : 20px 15px;
+  
+  display : flex;
+  flex-direction : column;
+  box-shadow : 0 5px 20px rgba(0,0,0,0.5);
+  transition : 0.3s ease-in-out;
+  border-radius : 15px;
+}
+.value-container .value-card:hover {
+  height : 320px;    
+}
 
 
+.value-container .value-card .value-image {
+  position : relative;
+  width : 260px;
+  height : 260px;
+  
+  top : -40%;
+  left: 8px;
+  box-shadow : 0 5px 20px rgba(0,0,0,0.2);
+  z-index : 1;
+}
 
+.value-container .value-card .value-image-bulb {
+  position : relative;
+  width : 260px;
+  height : 260px;
+  
+  top : -40%;
+  left: 8px;
+  box-shadow : 0 5px 20px rgba(0,0,0,0.2);
+  z-index : 1;
+}
+
+.value-container .value-card .value-image-learn {
+  position : relative;
+  width : 260px;
+  height : 260px;
+  
+  top : -40%;
+  left: 8px;
+  box-shadow : 0 5px 20px rgba(0,0,0,0.2);
+  z-index : 1;
+}
+
+.value-container .value-card .value-image img {
+  max-width : 90%;
+  border-radius : 15px;
+}
+
+.value-container .value-card .value-image-bulb img {
+  max-width : 90%;
+  border-radius : 15px;
+}
+.value-container .value-card .value-image-learn img {
+  max-width : 90%;
+  border-radius : 15px;
+}
+
+.value-container .value-card .value-content {
+  position : relative;
+  top : -140px;
+  padding : 10px 15px;
+  color : #111;
+  text-align : center;
+  
+  visibility : hidden;
+  opacity : 0;
+  transition : 0.3s ease-in-out;
+    
+}
+
+.value-container .value-card:hover .value-content {
+   margin-top : 30px;
+   visibility : visible;
+   opacity : 1;
+   transition-delay: 0.2s;
+  
+}
 
 
 
