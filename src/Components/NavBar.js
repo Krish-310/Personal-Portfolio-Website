@@ -4,10 +4,10 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { useState, useEffect } from 'react';
 import navIcon1 from '../Assets/Images/nav-icon1.svg'
-import discord from '../Assets/Images/discord-mark-white.svg'
 import Logo from '../Assets/Images/Krish_black_cat.png'
 import instagram from '../Assets/Images/insta.svg'
 import { HashLink } from 'react-router-hash-link';
+import github from '../Assets/Images/github-mark-white.svg'
 
 
 export const NavBar = () => {
@@ -54,11 +54,11 @@ export const NavBar = () => {
             </Nav>
             <span className='navbar-text'>
                 <div className='social-icon'>
-                    <a href='#>'> <img src={navIcon1} alt=''/> </a>
-                    <a href='#>'> <img src={discord} alt=''/> </a>
-                    <a href='#>'> <img src={instagram} alt=''/> </a>
+                    <a href='http://www.linkedin.com/in/krish310/'> <img src={navIcon1} alt=''/> </a>
+                    <a href='https://www.instagram.com/krishy_310/'> <img src={instagram} alt=''/> </a>
+                    <a href='https://github.com/Krish-310'> <img src={github} alt=''/> </a>
                 </div>
-                    <HashLink to='#connect'>
+                    <HashLink to='/#connect'>
                     <button className='vvd' onClick={() => console.log("connect")}> 
                         <span> Let's Connect </span> 
                     </button>

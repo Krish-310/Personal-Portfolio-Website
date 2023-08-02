@@ -60,8 +60,8 @@ export const Banner = () => {
                         <span className='wrap blinking-cursor'> | </span>
                     </span>
                     </h1>
-                    <p> I'm a Computer Science student at the University of Waterloo. I just finished my first year
-                        and now am on my first Co-op Term. I enjoy programming and am exploring my interest in the
+                    <p> I'm a Computer Science student at the University of Waterloo. I just finished my first Co-op term
+                        and am about to start my second year of university. I enjoy programming and am exploring my interest in the
                         fields of Web Development, Software Development and Artificial Intelligence. Feel free to
                         get in touch with me anytime!
                     </p>
