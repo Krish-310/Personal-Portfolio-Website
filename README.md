@@ -7,6 +7,7 @@ Welcome to my Personal Portfolio Website!
 
 Fixes Pending:
 - AWS lambda to setup the contact form server
+- Lol, it looks like I made a website that is incompatible with Github pages. Need to find some other place to deploy it now XD
 
 
 
