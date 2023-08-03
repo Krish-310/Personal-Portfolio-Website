@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/Personal-Portfolio-Website/static/css/main.81242bfd.css",
-    "main.js": "/Personal-Portfolio-Website/static/js/main.813223df.js",
-    "static/js/787.fb771931.chunk.js": "/Personal-Portfolio-Website/static/js/787.fb771931.chunk.js",
+    "main.css": "/Personal-Portfolio-Website/static/css/main.727cbbc4.css",
+    "main.js": "/Personal-Portfolio-Website/static/js/main.85bd9d78.js",
+    "static/js/496.6c9b4e30.chunk.js": "/Personal-Portfolio-Website/static/js/496.6c9b4e30.chunk.js",
     "static/media/footer_cat.png": "/Personal-Portfolio-Website/static/media/footer_cat.b38c5d1e84514bd72461.png",
     "static/media/sapling.jpg": "/Personal-Portfolio-Website/static/media/sapling.42809490b8785fcb3538.jpg",
     "static/media/learn.jpg": "/Personal-Portfolio-Website/static/media/learn.1d8213451908cdc1bf11.jpg",
@@ -19,12 +19,12 @@
     "static/media/github-mark-white.svg": "/Personal-Portfolio-Website/static/media/github-mark-white.97ed8e7eef60d61ca469881dd6f34511.svg",
     "index.html": "/Personal-Portfolio-Website/index.html",
     "static/media/nav-icon1.svg": "/Personal-Portfolio-Website/static/media/nav-icon1.721d5414c26365f117e71d46b6641cb2.svg",
-    "main.81242bfd.css.map": "/Personal-Portfolio-Website/static/css/main.81242bfd.css.map",
-    "main.813223df.js.map": "/Personal-Portfolio-Website/static/js/main.813223df.js.map",
-    "787.fb771931.chunk.js.map": "/Personal-Portfolio-Website/static/js/787.fb771931.chunk.js.map"
+    "main.727cbbc4.css.map": "/Personal-Portfolio-Website/static/css/main.727cbbc4.css.map",
+    "main.85bd9d78.js.map": "/Personal-Portfolio-Website/static/js/main.85bd9d78.js.map",
+    "496.6c9b4e30.chunk.js.map": "/Personal-Portfolio-Website/static/js/496.6c9b4e30.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.81242bfd.css",
-    "static/js/main.813223df.js"
+    "static/css/main.727cbbc4.css",
+    "static/js/main.85bd9d78.js"
   ]
 }
