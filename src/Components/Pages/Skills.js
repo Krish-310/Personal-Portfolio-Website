@@ -1,6 +1,7 @@
 import React from 'react'
 import '../../App.css'
 import { Container, Row, Col } from 'react-bootstrap'
+import resume from '../../Assets/Documents/krish_resume_july.pdf'
 
 export const Skills = () => {
   return (
@@ -176,6 +177,15 @@ export const Skills = () => {
                         Go: The Complete Developer's Guide (Golang)
                         <span className="badge bg-dark rounded-pill">Udemy</span>
                       </li>
+                      <li className="list-group-item d-flex justify-content-between align-items-center">
+                        Core Java Made Easy (Latest Java 17)
+                        <span className="badge bg-dark rounded-pill">Udemy</span>
+                      </li>
+                      <li className="list-group-item d-flex justify-content-between align-items-center">
+                        CS50’s Introduction to Artificial Intelligence
+                        <span className="badge bg-dark rounded-pill">edX</span>
+                      </li>
+
                     </ul>
                   </div>
                 </div>
@@ -231,9 +241,17 @@ export const Skills = () => {
             <Row className='bottomrow'>
               <div className='resume'>
                 <h5> Download my Resume by clicking this button! </h5>
-                <button type="button" className="btn btn-primary">
-                  My Resume!
-                </button>
+                <div className='resume-button'>
+                  <a href={resume}
+                      download="Krish's Resume (July 2023)"
+                      target="_blank"
+                      rel="noreferrer">
+                  
+                    <button type="button" className="btn btn-primary">
+                      My Resume!
+                    </button>
+                  </a>
+                </div>
                 <p> This is my resume as of July 2023</p>
               </div>
             </Row>
