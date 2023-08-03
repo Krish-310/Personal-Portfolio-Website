@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/Personal-Portfolio-Website/static/css/main.81242bfd.css",
+    "main.js": "/Personal-Portfolio-Website/static/js/main.813223df.js",
+    "static/js/787.fb771931.chunk.js": "/Personal-Portfolio-Website/static/js/787.fb771931.chunk.js",
+    "static/media/footer_cat.png": "/Personal-Portfolio-Website/static/media/footer_cat.b38c5d1e84514bd72461.png",
+    "static/media/sapling.jpg": "/Personal-Portfolio-Website/static/media/sapling.42809490b8785fcb3538.jpg",
+    "static/media/learn.jpg": "/Personal-Portfolio-Website/static/media/learn.1d8213451908cdc1bf11.jpg",
+    "static/media/bulb.jpg": "/Personal-Portfolio-Website/static/media/bulb.a363ed6d8d5773f04393.jpg",
+    "static/media/CentraNo2-Bold.ttf": "/Personal-Portfolio-Website/static/media/CentraNo2-Bold.2faff7f7d3fc92a2fcd9.ttf",
+    "static/media/CentraNo2-Medium.ttf": "/Personal-Portfolio-Website/static/media/CentraNo2-Medium.f94be5b326d78bb32b95.ttf",
+    "static/media/CentraNo2-Book.ttf": "/Personal-Portfolio-Website/static/media/CentraNo2-Book.2b143fa4b734a3584043.ttf",
+    "static/media/krish_resume_july.pdf": "/Personal-Portfolio-Website/static/media/krish_resume_july.a5702bc49ad706e1136d.pdf",
+    "static/media/coder_desk.png": "/Personal-Portfolio-Website/static/media/coder_desk.6a1cab1e26e0593c0015.png",
+    "static/media/cats.png": "/Personal-Portfolio-Website/static/media/cats.936709f82ab3892b8eb3.png",
+    "static/media/Krish_black_cat.png": "/Personal-Portfolio-Website/static/media/Krish_black_cat.2f8d1900699da1a9445e.png",
+    "static/media/insta.svg": "/Personal-Portfolio-Website/static/media/insta.ee0c70cac0d259200f14839a783ff572.svg",
+    "static/media/discord-mark-white.svg": "/Personal-Portfolio-Website/static/media/discord-mark-white.a420227021864513c33f564d51c99590.svg",
+    "static/media/github-mark-white.svg": "/Personal-Portfolio-Website/static/media/github-mark-white.97ed8e7eef60d61ca469881dd6f34511.svg",
+    "index.html": "/Personal-Portfolio-Website/index.html",
+    "static/media/nav-icon1.svg": "/Personal-Portfolio-Website/static/media/nav-icon1.721d5414c26365f117e71d46b6641cb2.svg",
+    "main.81242bfd.css.map": "/Personal-Portfolio-Website/static/css/main.81242bfd.css.map",
+    "main.813223df.js.map": "/Personal-Portfolio-Website/static/js/main.813223df.js.map",
+    "787.fb771931.chunk.js.map": "/Personal-Portfolio-Website/static/js/787.fb771931.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.81242bfd.css",
+    "static/js/main.813223df.js"
+  ]
+}
