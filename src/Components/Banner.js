@@ -65,7 +65,7 @@ export const Banner = () => {
                         fields of Web Development, Software Development and Artificial Intelligence. Feel free to
                         get in touch with me anytime!
                     </p>
-                    <button type='button' className="btn btn-dark" onClick={() => console.log("Connect")}> 
+                    <button id='myButton' type='button' className="btn btn-dark" onClick={() => window.location='/#connect'}> 
                         <span> Let's Connect </span> <ArrowRightCircle size={25}/> 
                     </button>
                 </Col>
