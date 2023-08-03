@@ -79,6 +79,10 @@ export const Skills = () => {
                       R
                       <span className="badge bg-dark rounded-pill">50%</span>
                     </li>
+                    <li className="list-group-item d-flex justify-content-between align-items-center">
+                      Java
+                      <span className="badge bg-dark rounded-pill">70%</span>
+                    </li>
                   </ul>
                 </div>
               </div>
