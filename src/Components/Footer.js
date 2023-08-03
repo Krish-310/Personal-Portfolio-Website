@@ -20,7 +20,7 @@ export const Footer = () => {
                     </Col>
                     <Col sm={6}>
                         <div className='logo'>
-                            <a href='#home'>  <img src={logo} alt=''/> </a>
+                            <a href='/Personal-Portfolio-Website/#home'>  <img src={logo} alt=''/> </a>
                         </div>
                         <div className='wrapping'>
                         <div className='social-icon icon-footer'>
