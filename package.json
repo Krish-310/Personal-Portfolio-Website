@@ -1,7 +1,6 @@
 {
   "name": "personal_portfolio",
   "version": "1.0.1",
-  "homepage": "https://Krish-310.github.io/Personal-Portfolio-Website",
   "private": true,
   "dependencies": {
     "@jridgewell/sourcemap-codec": "latest",
