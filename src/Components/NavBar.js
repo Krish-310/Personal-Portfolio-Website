@@ -58,7 +58,7 @@ export const NavBar = () => {
                     <a href='https://www.instagram.com/krishy_310/'> <img src={instagram} alt=''/> </a>
                     <a href='https://github.com/Krish-310'> <img src={github} alt=''/> </a>
                 </div>
-                    <HashLink to='/Personal-Portfolio-Website/#connect'>
+                    <HashLink to='/#connect'>
                     <button className='vvd' onClick={() => console.log("connect")}> 
                         <span> Let's Connect </span> 
                     </button>
