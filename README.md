@@ -35,6 +35,7 @@ firebase deploy
 ### Fixes Pending to the website:
 - Contact Form feature is currently not functional. Need to use AWS Lambda to make the serverless form work.
 - Projects section is still a work in progress!
+- Front-End is not responsive to varied screen sizes. Needs to be modified to work on native devices.
 
 
 
