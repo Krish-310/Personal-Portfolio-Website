@@ -1,36 +1,40 @@
-Hello!
+# Krish's Personal Portfolio Website
 
-Welcome to my Personal Portfolio Website!
+Hi! Welcome to my Personal Portfolio Website!
 
 Here is a screenshot of the Landing of my Website:
-![alt text](./Extra/Landing_page.png)
+
+![Landing_page](https://github.com/Krish-310/Personal-Portfolio-Website/assets/106371197/0f92f983-b38a-4917-b1c5-c29fe262cb0a)
 
 
 
-Fixes Pending:
-- AWS lambda to setup the contact form server
-- Lol, it looks like I made a website that is incompatible with Github pages. Need to find some other place to deploy it now XD
+This project is being hosted at: https://krish-personal-website.web.app/
 
 
+The website was developed using React and NodeJS, along with some HTML, CSS and Bootstrap. 
+It is being hosted using Google Firebase.
 
-### Running the Project
 
-In the project directory, you can run:
+To run the app in development mode: 
+```console
+npm start
+```
 
-### `npm start`
+To create a build for the app:
+```console
+npm run build
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+To deploy the app to Firebase create a build and run:
+```console
+firebase init 
+firebase deploy
+```
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.
+### Fixes Pending to the website:
+- Contact Form feature is currently not functional. Need to use AWS Lambda to make the serverless form work.
+- Projects section is still a work in progress!
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
