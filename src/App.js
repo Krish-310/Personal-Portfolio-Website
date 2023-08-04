@@ -16,11 +16,11 @@ function App() {
       <NavBar />
       <div className='container-fluid'>
         <Routes>
-          <Route path='/Personal-Portfolio-Website/' element={<div className='home'><Home/></div>} />
-          <Route path='/Personal-Portfolio-Website/skills' element={<Skills/>} />
-          <Route path='/Personal-Portfolio-Website/projects' element={<Projects/>} />
-          <Route path='/Personal-Portfolio-Website/career' element={<Career/>} />
-          <Route path='/Personal-Portfolio-Website/about' element={<About/>} />
+          <Route path='/' element={<div className='home'><Home/></div>} />
+          <Route path='/skills' element={<Skills/>} />
+          <Route path='/projects' element={<Projects/>} />
+          <Route path='/career' element={<Career/>} />
+          <Route path='/about' element={<About/>} />
         </Routes>
       </div>
       <Footer/>
