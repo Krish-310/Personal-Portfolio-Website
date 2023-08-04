@@ -3,7 +3,7 @@ Hello!
 Welcome to my Personal Portfolio Website!
 
 Here is a screenshot of the Landing of my Website:
-![alt text](Extra/Landing_page.png)
+![alt text](./Extra/Landing_page.png)
 
 
 
