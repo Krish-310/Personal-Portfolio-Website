@@ -52,3 +52,5 @@ router.post("/contact", (req, res) => {
     }
   });
 });
+
+module.exports = app;
