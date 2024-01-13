@@ -7,8 +7,15 @@ const path = require("path");
 
 
 
+
+
 // server used to send send emails
 const app = express();
+
+app.get('/', (req, res) => {
+  res.send('Hello, this is the root path!');
+});
+
 const PORT = process.env.PORT || 3030;
 app.use(cors());
 app.use(express.json());
