@@ -5,14 +5,18 @@ require("dotenv").config();
 const nodemailer = require("nodemailer");
 const path = require("path");
 
+console.log("hello1");
+
 // server used to send send emails
 const app = express();
 app.use(cors());
 app.use(express.json());
 app.use("/", router);
 app.listen(5000, () => console.log("Server Running"));
-// console.log(process.env.EMAIL_USER);
-// console.log(process.env.EMAIL_PASS);
+console.log(process.env.EMAIL_USER);
+console.log(process.env.EMAIL_PASS);
+
+console.log("hello2");
 
 const contactEmail = nodemailer.createTransport({
   service: 'gmail',
@@ -22,6 +26,8 @@ const contactEmail = nodemailer.createTransport({
   },
 });
 
+console.log("hello3");
+
 contactEmail.verify((error) => {
   if (error) {
     console.log(error);
@@ -29,6 +35,8 @@ contactEmail.verify((error) => {
     console.log("Ready to Send");
   }
 });
+
+console.log("hello4");
 
 router.post("/contact", (req, res) => {
   const name = req.body.firstName + req.body.lastName;
@@ -53,4 +61,8 @@ router.post("/contact", (req, res) => {
   });
 });
 
+console.log("hello5");
+
 module.exports = app;
+
+console.log("hello6");
