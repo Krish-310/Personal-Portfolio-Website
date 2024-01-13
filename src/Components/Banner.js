@@ -5,13 +5,14 @@ import { useState, useEffect } from 'react'
 // import 'animate.css';
 // import TrackVisibility from 'react-on-screen';
 import headImage from '../Assets/Images/coder_desk.png'
+import resume from '../Assets/Documents/krish-resume.pdf'
 
 export const Banner = () => {
 
     const [loopNum, setLoopNum] = useState(0)
     const [isDeleting, setIsDeleting] = useState(false)
 
-    const toRotate = ["a Programmer", "a Full-Stack Developer", "a Software Developer", "an AI Developer"]
+    const toRotate = ["a Programmer", "a Full-Stack Developer", "a Software Developer",  "an AI Engineer"]
 
     const [text, setText] = useState('')
     const [delta, setDelta] = useState(300 - Math.random() * 100)
@@ -60,13 +61,16 @@ export const Banner = () => {
                         <span className='wrap blinking-cursor'> | </span>
                     </span>
                     </h1>
-                    <p> I'm a Computer Science student at the University of Waterloo. I just finished my first Co-op term
-                        and am about to start my second year of university. I enjoy programming and am exploring my interest in the
-                        fields of Web Development, Software Development and Artificial Intelligence. Feel free to
+                    <p> I'm a Computer Science student at the University of Waterloo. I am currently completing my second year
+                        and am seeking Co-op opportunities for the Spring of 2024. I enjoy programming and am exploring my interest in the
+                        fields of Software Development, Full-Stack Development, AI and Cybersecurity. Feel free to
                         get in touch with me anytime!
                     </p>
-                    <button id='myButton' type='button' className="btn btn-dark" onClick={() => window.location='/#connect'}> 
-                        <span> Let's Connect </span> <ArrowRightCircle size={25}/> 
+                    <button id='myButton' type='button' className="btn btn-dark" onClick={() => {
+                        window.open(resume); 
+                        return true;}
+                    } target='_blank'> 
+                        <span> Check out my Resume! </span> <ArrowRightCircle size={25}/> 
                     </button>
                 </Col>
                 <Col xs={12} md={6} xl={5}>

@@ -3,49 +3,80 @@ import sapling from '../../Assets/Images/sapling.jpg'
 import bulb from '../../Assets/Images/bulb.jpg'
 import learn from '../../Assets/Images/learn.jpg'
 import { Row, Col } from 'react-bootstrap'
+import krish_img from '../../Assets/Images/Krish.jpg'
+import cat from '../../Assets/Images/footer_cat.png'
 
 export const About = () => {
   return (
     <div className='about-page'>
       <div className='about-me'>
         <p> 
-          <h2> Hi! </h2> <br/>
-          My name is Krish Kochar, and I am a student starting his second year at the University of Waterloo.
-          I'm majoring in Computer Science and am enrolled in the Co-op programme. 
+
+
+
+
+          <h2> My name is Krish Kochar </h2> <br/>
+
+          <img alt='' src={krish_img} className='profile-pic'/>
 
           <br/><br/>
-          
-          I was born in Singapore and grew up over there. At the age of 16, my family and I moved to India
-          where I spent the next few years. In 2022, I graduated from high school and moved to Canada to 
-          start my university education at the University of Waterloo. 
+
+          I'm a Co-op student studying Computer Science at the Univeristy of Waterloo. I am currently completing
+          the second year of my undergrad education (Sophomore Year). 
+
+          <br/><br/><br/>
+
+          <h3> A little bit about me </h3> <br/>
+
+          I grew up in Singapore, then lived in India for a while, and am now in Canada. <br/>
+          I love cats! They're adorable :) <br/><br/>
+
+          <div className='cat-pic'>
+            <img src={cat} alt=''/>
+          </div>
+          <br/>
+
+          Fun Fact: I like the colour black (if you couldn't already tell XD)
 
           <br/> <br/> <br/>
           <h3> My Interests</h3> <br/>
 
           <div className='centred-list'>
-          - Software Development <br/>
-          - Full-Stack Development <br/>
-          - Artificial Intelligence and Machine Learning <br/>
-          - Cybersecurity <br/>
+          - Research! (Very enthsiastic!) <br/>
+          - Software Development (Proficient) <br/>
+          - Full-Stack Development (Proficient) <br/>
+          - Data Science & Machine Learning (Intermediate, still learning) <br/>
+          - Cybersecurity (Intermediate, willing to learn!) <br/>
           </div>
           <br/>
-          I have recently been exploring all of these areas, and very much look forward to exploring many other such areas in 
-          the future. Once I get a grasp on each of these fields, I will be able to decide what I want to 
-          specialize in. 
+          My exploration into each of these fields has led to my interest in them only growing. <br/>
+          I have experience in <b>Software and Full-Stack Development</b> and am further developing upon it. <br/>
+          However, I also want to explore other fields before committing to the one I enjoy the most. <br/>
+          For that reason, I'm exploring <b>Data Science and Cybersecurity </b> as options, and I love them so far. <br/>
+          I am also very excited about working in <b>Research</b>. I'm actively seeking a <b>URA/URF</b> to learn more! < br/>
+          
 
           <br/> <br/> <br/>
-          <h3> My Hobbies </h3> <br/>
+          <h3> My Other Hobbies </h3> <br/>
 
-          I am an avid speedcuber and I enjoy playing Chess. <br/>
-          I'm not the best at sports, but I love playing badminton and table tennis every now and then. <br/>
+          <div className='centred-list'>
+          - Speedcubing <br/>
+          - Chess <br/>
+          - Pool <br/>
+          - Table Tennis  <br/>
+          - Badminton <br/>
+          - Reading <br/>
+          - Binging Movies & Shows <br/>
+          - Games <br/>
+          </div>
           <br/>
-          Not to mention, I also love reading books as well as watching movies and TV Series. Some of my favourites
-          are Harry Potter, Percy Jackson, and Marvel. 
-          <br/> <br/>
-          I also love cats :)
+
+          Some of my favourite works of fiction are Harry Potter, Percy Jackson, Marvel and Pokemon. 
+          
+
 
           <br/> <br/> <br/>
-          <h3> My Values </h3> <br/>
+          <h3> My Core Values </h3> <br/>
 
           <Row className='values'>
             <Col sm={4} className='value-container'>
@@ -86,7 +117,7 @@ export const About = () => {
 
 
 
-          <br/> <br/> <br/>
+          {/* <br/> <br/> <br/>
           <h3> What I can do for you </h3> <br/>
 
           I am competent in Full-Stack Development as well as basic Software Development, so I could assist with any projects
@@ -94,14 +125,14 @@ export const About = () => {
           you may have. 
           <br/> <br/>
           I am currently working on learning more about AI/ML and Cybersecurity, but soon I would be able to
-          help with those fields as well. 
+          help with those fields as well.  */}
 
 
-          <br/><br/><br/><br/><br/><br/>
-          You can find me on Social Media!
+          <br/><br/><br/><br/>
+          You can find me on my Social Media! <br/>
+          Feel free to reach out anytime! I would love to talk! <br/>
 
           <br/><br/>
-          Thanks for visiting my website! Have a nice day!
         </p>
       </div>
     </div>

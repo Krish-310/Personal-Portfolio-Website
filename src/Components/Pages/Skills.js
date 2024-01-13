@@ -1,12 +1,11 @@
 import React from 'react'
 import '../../App.css'
 import { Container, Row, Col } from 'react-bootstrap'
-import resume from '../../Assets/Documents/krish_resume_july.pdf'
+import resume from '../../Assets/Documents/krish-resume.pdf'
 
 export const Skills = () => {
   return (
     <section className='skills-page'>
-
       <Container>
       <h1> My Technical Skills </h1>
         <Row className='toprow'>
@@ -22,27 +21,31 @@ export const Skills = () => {
                   </li>
                   <li className="list-group-item d-flex justify-content-between align-items-center">
                     CSS
-                    <span className="badge bg-dark rounded-pill">75%</span>
+                    <span className="badge bg-dark rounded-pill">90%</span>
                   </li>
                   <li className="list-group-item d-flex justify-content-between align-items-center">
                     Javascript
-                    <span className="badge bg-dark rounded-pill">80%</span>
+                    <span className="badge bg-dark rounded-pill">90%</span>
                   </li>
                   <li className="list-group-item d-flex justify-content-between align-items-center">
                     Bootstrap
                     <span className="badge bg-dark rounded-pill">90%</span>
                   </li>
                   <li className="list-group-item d-flex justify-content-between align-items-center">
-                    React
-                    <span className="badge bg-dark rounded-pill">80%</span>
+                    ReactJS
+                    <span className="badge bg-dark rounded-pill">90%</span>
                   </li>
                   <li className="list-group-item d-flex justify-content-between align-items-center">
                     NodeJS
-                    <span className="badge bg-dark rounded-pill">50%</span>
+                    <span className="badge bg-dark rounded-pill">90%</span>
                   </li>
                   <li className="list-group-item d-flex justify-content-between align-items-center">
-                    Express
-                    <span className="badge bg-dark rounded-pill">40%</span>
+                    Express.js
+                    <span className="badge bg-dark rounded-pill">85%</span>
+                  </li>
+                  <li className="list-group-item d-flex justify-content-between align-items-center">
+                    MongoDB
+                    <span className="badge bg-dark rounded-pill">80%</span>
                   </li>
                 </ul>
               </div>
@@ -56,7 +59,19 @@ export const Skills = () => {
                   <h3> Software Development </h3>
                   <ul className="list-group">
                     <li className="list-group-item d-flex justify-content-between align-items-center">
+                      C++
+                      <span className="badge bg-dark rounded-pill">90%</span>
+                    </li>
+                    <li className="list-group-item d-flex justify-content-between align-items-center">
                       Python
+                      <span className="badge bg-dark rounded-pill">95%</span>
+                    </li>
+                    <li className="list-group-item d-flex justify-content-between align-items-center">
+                      Go
+                      <span className="badge bg-dark rounded-pill">90%</span>
+                    </li>
+                    <li className="list-group-item d-flex justify-content-between align-items-center">
+                      Javascript
                       <span className="badge bg-dark rounded-pill">90%</span>
                     </li>
                     <li className="list-group-item d-flex justify-content-between align-items-center">
@@ -64,20 +79,8 @@ export const Skills = () => {
                       <span className="badge bg-dark rounded-pill">90%</span>
                     </li>
                     <li className="list-group-item d-flex justify-content-between align-items-center">
-                      C++
-                      <span className="badge bg-dark rounded-pill">70%</span>
-                    </li>
-                    <li className="list-group-item d-flex justify-content-between align-items-center">
-                      Golang
-                      <span className="badge bg-dark rounded-pill">90%</span>
-                    </li>
-                    <li className="list-group-item d-flex justify-content-between align-items-center">
-                      Javascript
-                      <span className="badge bg-dark rounded-pill">80%</span>
-                    </li>
-                    <li className="list-group-item d-flex justify-content-between align-items-center">
                       R
-                      <span className="badge bg-dark rounded-pill">50%</span>
+                      <span className="badge bg-dark rounded-pill">70%</span>
                     </li>
                     <li className="list-group-item d-flex justify-content-between align-items-center">
                       Java
@@ -100,11 +103,23 @@ export const Skills = () => {
                     </li>
                     <li className="list-group-item d-flex justify-content-between align-items-center">
                       R
-                      <span className="badge bg-dark rounded-pill">50%</span>
+                      <span className="badge bg-dark rounded-pill">80%</span>
                     </li>
                     <li className="list-group-item d-flex justify-content-between align-items-center">
                       Colab
-                      <span className="badge bg-dark rounded-pill">60%</span>
+                      <span className="badge bg-dark rounded-pill">90%</span>
+                    </li>
+                    <li className="list-group-item d-flex justify-content-between align-items-center">
+                      Jupyter
+                      <span className="badge bg-dark rounded-pill">90%</span>
+                    </li>
+                    <li className="list-group-item d-flex justify-content-between align-items-center">
+                      NumPy
+                      <span className="badge bg-dark rounded-pill">80%</span>
+                    </li>
+                    <li className="list-group-item d-flex justify-content-between align-items-center">
+                      Pandas
+                      <span className="badge bg-dark rounded-pill">80%</span>
                     </li>
                   </ul>
                 </div>
@@ -125,12 +140,12 @@ export const Skills = () => {
                         <span className="badge bg-dark rounded-pill">90%</span>
                       </li>
                       <li className="list-group-item d-flex justify-content-between align-items-center">
-                        JIRA
-                        <span className="badge bg-dark rounded-pill">80%</span>
+                        UML
+                        <span className="badge bg-dark rounded-pill">90%</span>
                       </li>
                       <li className="list-group-item d-flex justify-content-between align-items-center">
                         Docker
-                        <span className="badge bg-dark rounded-pill">70%</span>
+                        <span className="badge bg-dark rounded-pill">80%</span>
                       </li>
                     </ul>
                   </Col>
@@ -141,11 +156,11 @@ export const Skills = () => {
                         <span className="badge bg-dark rounded-pill">90%</span>
                       </li>
                       <li className="list-group-item d-flex justify-content-between align-items-center">
-                        Confluence
-                        <span className="badge bg-dark rounded-pill">70%</span>
+                        Postman
+                        <span className="badge bg-dark rounded-pill">90%</span>
                       </li>
                       <li className="list-group-item d-flex justify-content-between align-items-center">
-                        LaTeX
+                        Wordpress
                         <span className="badge bg-dark rounded-pill">90%</span>
                       </li>
                     </ul>
@@ -153,16 +168,16 @@ export const Skills = () => {
                   <Col sm={4}>
                     <ul className="list-group">
                       <li className="list-group-item d-flex justify-content-between align-items-center">
-                        ChatGPT
-                        <span className="badge bg-dark rounded-pill">85%</span>
-                      </li>
-                      <li className="list-group-item d-flex justify-content-between align-items-center">
-                        Unity (C#)
-                        <span className="badge bg-dark rounded-pill">60%</span>
-                      </li>
-                      <li className="list-group-item d-flex justify-content-between align-items-center">
-                        VSCode
+                        Firebase
                         <span className="badge bg-dark rounded-pill">90%</span>
+                      </li>
+                      <li className="list-group-item d-flex justify-content-between align-items-center">
+                        Jenkins
+                        <span className="badge bg-dark rounded-pill">70%</span>
+                      </li>
+                      <li className="list-group-item d-flex justify-content-between align-items-center">
+                        AWS
+                        <span className="badge bg-dark rounded-pill">70%</span>
                       </li>
                     </ul>
                   </Col>
@@ -247,7 +262,7 @@ export const Skills = () => {
                 <h5> Download my Resume by clicking this button! </h5>
                 <div className='resume-button'>
                   <a href={resume}
-                      download="Krish's Resume (July 2023)"
+                      download="Krish's Resume (Jan 2023)"
                       target="_blank"
                       rel="noreferrer">
                   
@@ -256,7 +271,7 @@ export const Skills = () => {
                     </button>
                   </a>
                 </div>
-                <p> This is my resume as of July 2023</p>
+                <p> My resume as of January 2024 </p>
               </div>
             </Row>
       </Container>
