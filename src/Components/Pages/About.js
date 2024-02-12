@@ -45,7 +45,7 @@ export const About = () => {
           - Research! (Very enthsiastic!) <br/>
           - Software Development (Proficient) <br/>
           - Full-Stack Development (Proficient) <br/>
-          - Data Science & Machine Learning (Intermediate, still learning) <br/>
+          - Data Science & Machine Learning (Strong foundation) <br/>
           - Cybersecurity (Intermediate, willing to learn!) <br/>
           </div>
           <br/>

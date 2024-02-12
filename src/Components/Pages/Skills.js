@@ -13,7 +13,7 @@ export const Skills = () => {
           <div className="maincontainer">
             <div className="thecard">
               <div className="thefront">
-                <h3> Web Development </h3>
+                <h3> Full-Stack Development </h3>
                 <ul className="list-group">
                   <li className="list-group-item d-flex justify-content-between align-items-center">
                     HTML
@@ -47,6 +47,10 @@ export const Skills = () => {
                     MongoDB
                     <span className="badge bg-dark rounded-pill">80%</span>
                   </li>
+                  <li className="list-group-item d-flex justify-content-between align-items-center">
+                    Next.js
+                    <span className="badge bg-dark rounded-pill">80%</span>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -59,7 +63,7 @@ export const Skills = () => {
                   <h3> Software Development </h3>
                   <ul className="list-group">
                     <li className="list-group-item d-flex justify-content-between align-items-center">
-                      C++
+                      C/C++
                       <span className="badge bg-dark rounded-pill">90%</span>
                     </li>
                     <li className="list-group-item d-flex justify-content-between align-items-center">
@@ -75,15 +79,23 @@ export const Skills = () => {
                       <span className="badge bg-dark rounded-pill">90%</span>
                     </li>
                     <li className="list-group-item d-flex justify-content-between align-items-center">
-                      C
-                      <span className="badge bg-dark rounded-pill">90%</span>
-                    </li>
-                    <li className="list-group-item d-flex justify-content-between align-items-center">
                       R
                       <span className="badge bg-dark rounded-pill">70%</span>
                     </li>
                     <li className="list-group-item d-flex justify-content-between align-items-center">
                       Java
+                      <span className="badge bg-dark rounded-pill">70%</span>
+                    </li>
+                    <li className="list-group-item d-flex justify-content-between align-items-center">
+                      Typescript
+                      <span className="badge bg-dark rounded-pill">80%</span>
+                    </li>
+                    <li className="list-group-item d-flex justify-content-between align-items-center">
+                      SQL
+                      <span className="badge bg-dark rounded-pill">70%</span>
+                    </li>
+                    <li className="list-group-item d-flex justify-content-between align-items-center">
+                      GraphQL
                       <span className="badge bg-dark rounded-pill">70%</span>
                     </li>
                   </ul>
@@ -121,6 +133,18 @@ export const Skills = () => {
                       Pandas
                       <span className="badge bg-dark rounded-pill">80%</span>
                     </li>
+                    <li className="list-group-item d-flex justify-content-between align-items-center">
+                      Matplotlib
+                      <span className="badge bg-dark rounded-pill">80%</span>
+                    </li>
+                    <li className="list-group-item d-flex justify-content-between align-items-center">
+                      Scikit-Learn
+                      <span className="badge bg-dark rounded-pill">80%</span>
+                    </li>
+                    <li className="list-group-item d-flex justify-content-between align-items-center">
+                      Seaborn
+                      <span className="badge bg-dark rounded-pill">80%</span>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -136,7 +160,7 @@ export const Skills = () => {
                   <Col sm={4}>
                     <ul className="list-group">
                       <li className="list-group-item d-flex justify-content-between align-items-center">
-                        Linux
+                        Bash
                         <span className="badge bg-dark rounded-pill">90%</span>
                       </li>
                       <li className="list-group-item d-flex justify-content-between align-items-center">
@@ -153,11 +177,11 @@ export const Skills = () => {
                     <ul className="list-group">
                       <li className="list-group-item d-flex justify-content-between align-items-center">
                         Git
-                        <span className="badge bg-dark rounded-pill">90%</span>
+                        <span className="badge bg-dark rounded-pill">100%</span>
                       </li>
                       <li className="list-group-item d-flex justify-content-between align-items-center">
                         Postman
-                        <span className="badge bg-dark rounded-pill">90%</span>
+                        <span className="badge bg-dark rounded-pill">100%</span>
                       </li>
                       <li className="list-group-item d-flex justify-content-between align-items-center">
                         Wordpress
@@ -271,7 +295,7 @@ export const Skills = () => {
                     </button>
                   </a>
                 </div>
-                <p> My resume as of January 2024 </p>
+                <p> My resume as of Feb 2024 </p>
               </div>
             </Row>
       </Container>

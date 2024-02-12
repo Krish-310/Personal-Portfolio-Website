@@ -25,7 +25,7 @@ export const Contact = () => {
     
       const handleSubmit = async (e) => {
         e.preventDefault();
-        setButtonText("Sending...");
+        setButtonText("Sending...(Hold on...)");
         let response = await fetch("https://krish-personal-website-mailer.onrender.com/contact", {
           method: "POST",
           headers: {

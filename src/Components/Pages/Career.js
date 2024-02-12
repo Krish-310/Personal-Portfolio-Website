@@ -63,16 +63,22 @@ export const Career = () => {
                                     in the area of backend development. Here are some highlights; <br/> < br/>
                                     <ul>
                                       <li>
-                                        Used Go and JS to develop and test RESTful APIs for a client, developing an employee manager system with a login feature. Identified and resolved several crucial bugs.
+                                        Engineered RESTfulAPIs using Go & Javascript to power an employee management feature for 300+ users 
                                       </li>
                                       <li>
-                                      Collaborated to design backend microservice-based architectures for projects, with Agile methodologies
+                                        Collaborated to design backend microservice-based architectures with Agile, boosting performance by 20%
                                       </li>
                                       <li>
-                                      Implemented Prompt Engineering techniques in conjunction with ChatGPT to optimize software development processes in the workplace, increasing overall productivity by 15%
-
+                                        Employed Docker containers to streamline development workflows, resulting in a 50% lower deployment time 
+                                      </li>
+                                      <li>
+                                      Maintained 90% code quality on SonarQube & enforced version control strategies using Git & Bitbucket
+                                      </li>
+                                      <li>
+                                      Integrated GraphQL APIs with Hasura for efficient data fetching and enhanced scalability for 100+ users
                                       </li>
                                     </ul>
+                                    
                                     </p>
                             </div>
                         </div>

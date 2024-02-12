@@ -12,7 +12,7 @@ export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0)
     const [isDeleting, setIsDeleting] = useState(false)
 
-    const toRotate = ["a Programmer", "a Full-Stack Developer", "a Software Developer",  "an AI Engineer"]
+    const toRotate = ["Programmer", "Full-Stack Developer", "Software Developer",  "Data Scientist"]
 
     const [text, setText] = useState('')
     const [delta, setDelta] = useState(300 - Math.random() * 100)
@@ -57,7 +57,7 @@ export const Banner = () => {
                     <span className='tagline'> Welcome to my Portfolio! </span>
                     <h1>{`Hi, My name is Krish`} <br/> 
                     <span>
-                        <span className='wrap'> I'm {text} </span> 
+                        <span className='wrap'> I'm a {text} </span> 
                         <span className='wrap blinking-cursor'> | </span>
                     </span>
                     </h1>

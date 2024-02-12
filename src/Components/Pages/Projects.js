@@ -44,7 +44,7 @@ export const Projects = () => {
                     <div className='portfolio-item-image'>
                     <div className='image-wrap'>
                         <img className='p-image' src={finvest_advsior} alt=""/>
-                        <p className='portfolio-item-desc'> Hello! </p>
+                        <p className='portfolio-item-desc'> Python, Streamlit, <br/> Numpy, Pandas </p>
                       </div>
                     </div>
                     <h3> Finvest Advisor </h3>
@@ -67,7 +67,7 @@ export const Projects = () => {
                     <div className='portfolio-item-image'>
                     <div className='image-wrap'>
                         <img className='p-image' src={raiinet} alt=""/>
-                        <p className='portfolio-item-desc'> Hello! </p>
+                        <p className='portfolio-item-desc'> C++, Xlib, UML </p>
                       </div>
                     </div>
                     <h3> RAIInet </h3>
@@ -91,7 +91,7 @@ export const Projects = () => {
                     <div className='portfolio-item-image'>
                     <div className='image-wrap'>
                         <img className='p-image' src={bookstore} alt=""/>
-                        <p className='portfolio-item-desc'> Hello! </p>
+                        <p className='portfolio-item-desc'> NodeJS, Express,js, React, <br/> MongoDB, AWS </p>
                       </div>
                     </div>
                     <h3> Used Book Store </h3>
@@ -134,7 +134,7 @@ export const Projects = () => {
                     <div className='portfolio-item-image'>
                     <div className='image-wrap'>
                         <img className='p-image' src={giphygram} alt=""/>
-                        <p className='portfolio-item-desc'> Javascript, PWA </p>
+                        <p className='portfolio-item-desc'> Javascript, PWA, HTML, CSS </p>
                       </div>
                     </div>
                     <h3> Giphygram PWA </h3>
