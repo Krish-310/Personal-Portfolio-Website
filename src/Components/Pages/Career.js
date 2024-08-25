@@ -11,17 +11,52 @@ export const Career = () => {
                             <div class="date-content">
                                 <div class="date-outer">
                                     <span class="date">
-                                            <span class="month">Spring</span>
-                                    <span class="year">2024</span>
+                                            <span class="month">Winter/Spring</span>
+                                    <span class="year">2025</span>
                                     </span>
                                 </div>
                             </div>
                             <div class="timeline-content">
                                 <h5 class="title">Seeking an Internship for my next Co-op Term!</h5>
                                 <p class="description">
-                                    I'm looking for an internship for the 2024 Spring term! I'm interested
-                                    in many fields, such as Software Dev, Full-Stack, AI/ML, and more.
+                                    I'm looking for an internship for 2025, either in the Winter or Spring! I'm interested
+                                    in many fields, such as Software Dev, AI/ML, Cybersecurity and more.
                                     Feel free to reach out to me anytime!
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="timeline">
+                            <div class="icon"></div>
+                            <div class="date-content">
+                                <div class="date-outer">
+                                    <span class="date">
+                                            <span class="month">Spring</span>
+                                    <span class="year">2024</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="timeline-content">
+                                <h5 class="title">Platform Software Developer Intern at Ford</h5>
+                                <p class="description">
+                                    I interned at Ford Motor Company as a Platform Software Developer, working on the FNV4 Operating System. Here are some highlights; <br/> < br/>
+                                    <ul>
+                                      <li>
+                                        Implemented a Vision Compute Service in C++ with AUTOSAR, leveraging OpenVX/CV for the FNV4 OS
+                                      </li>
+                                      <li>
+                                        Developed unit & functional tests using GTest & Python, increasing code coverage on Sonarqube to over 94%
+                                      </li>
+                                      <li>
+                                        Diagnosed and fixed a critical defect in service termination, enhancing test success rate to 100% 
+                                      </li>
+                                      <li>
+                                        Boosted functional test coverage to 80% by integrating gcda file packaging in Jenkins pipelines using gcov
+                                      </li>
+                                      <li>
+                                        Automated release header validation and code size analysis using Python scripts, reducing package size by 20%
+                                      </li>
+                                    </ul>
                                 </p>
                             </div>
                         </div>

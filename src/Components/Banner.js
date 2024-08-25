@@ -2,8 +2,6 @@ import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import { ArrowRightCircle } from 'react-bootstrap-icons'
 import { useState, useEffect } from 'react'
-// import 'animate.css';
-// import TrackVisibility from 'react-on-screen';
 import headImage from '../Assets/Images/coder_desk.png'
 import resume from '../Assets/Documents/krish-resume.pdf'
 
@@ -12,7 +10,7 @@ export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0)
     const [isDeleting, setIsDeleting] = useState(false)
 
-    const toRotate = ["Programmer", "Full-Stack Developer", "Software Developer",  "Data Scientist"]
+    const toRotate = ["Programmer", "Software Developer",  "Data Scientist"]
 
     const [text, setText] = useState('')
     const [delta, setDelta] = useState(300 - Math.random() * 100)
@@ -61,9 +59,9 @@ export const Banner = () => {
                         <span className='wrap blinking-cursor'> | </span>
                     </span>
                     </h1>
-                    <p> I'm a Computer Science student at the University of Waterloo. I am currently completing my second year
-                        and am seeking Co-op opportunities for the Spring of 2024. I enjoy programming and am exploring my interest in the
-                        fields of Software Development, Full-Stack Development, AI and Cybersecurity. Feel free to
+                    <p> I'm a Computer Science student at the University of Waterloo. I am in my 3rd year and am 
+                        seeking Co-op opportunities for the Winter or Spring of 2025. I enjoy programming and am exploring my interest in the
+                        fields of Software Development, AI and Cybersecurity. Feel free to
                         get in touch with me anytime!
                     </p>
                     <button id='myButton' type='button' className="btn btn-dark" onClick={() => {

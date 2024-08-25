@@ -3,7 +3,7 @@ import sapling from '../../Assets/Images/sapling.jpg'
 import bulb from '../../Assets/Images/bulb.jpg'
 import learn from '../../Assets/Images/learn.jpg'
 import { Row, Col } from 'react-bootstrap'
-import krish_img from '../../Assets/Images/Krish.jpg'
+import krish_img from '../../Assets/Images/krish_pic.jpeg'
 import cat from '../../Assets/Images/footer_cat.png'
 
 export const About = () => {
@@ -17,12 +17,14 @@ export const About = () => {
 
           <h2> My name is Krish Kochar </h2> <br/>
 
-          <img alt='' src={krish_img} className='profile-pic'/>
+          <div className='profile-pic-container'>
+            <img alt='' src={krish_img} className='profile-pic'/>
+          </div>
 
           <br/><br/>
 
-          I'm a Co-op student studying Computer Science at the Univeristy of Waterloo. I am currently completing
-          the second year of my undergrad education (Sophomore Year). 
+          I'm a Co-op student studying Computer Science at the Univeristy of Waterloo. I am currently in
+          the third year of my undergrad education (Junior Year). 
 
           <br/><br/><br/>
 
@@ -86,8 +88,7 @@ export const About = () => {
                   </div>
                   <div className='value-content'>
                     <h4>Sustainability</h4>
-                    <p> I value sustainability above all and am always thinking of new ways that we can work towards the UN SDGs.
-                      </p>
+                    <p> is what I value above all. I am always thinking of new ways that we can work towards the UN SDGs.</p>
                   </div>
                 </div>
             </Col>
@@ -114,18 +115,6 @@ export const About = () => {
                 </div> 
             </Col>
           </Row>
-
-
-
-          {/* <br/> <br/> <br/>
-          <h3> What I can do for you </h3> <br/>
-
-          I am competent in Full-Stack Development as well as basic Software Development, so I could assist with any projects
-          that you may be working on or need help with. I would love to work on any Freelance Web Development projects
-          you may have. 
-          <br/> <br/>
-          I am currently working on learning more about AI/ML and Cybersecurity, but soon I would be able to
-          help with those fields as well.  */}
 
 
           <br/><br/><br/><br/>

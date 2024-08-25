@@ -73,10 +73,6 @@ export const Projects = () => {
                     <h3> RAIInet </h3>
                     <div className='portfolio-item-btns'>
                     <a href='https://github.com/Krish-310/RAIInet-public' className='btn btn-outline-dark' target="_blank"> Github </a>
-                      {/* <a href='https://krish-personal-website.web.app/' className='btn btn-outline-primary' target='_blank'> Project </a> */}
-                      {/* <a href='/projects/'
-                        onClick={(e) => alert("Sorry, this project is private. A demo will be up soon though!")} 
-                          className='btn btn-outline-dark' target='_blank'> Github </a> */}
                     </div>
                   </article>
                 </div> 
@@ -97,7 +93,6 @@ export const Projects = () => {
                     <h3> Used Book Store </h3>
                     <div className='portfolio-item-btns'>
                       <a href='https://github.com/Krish-310/Used-Book-Store' className='btn btn-outline-dark' target='_blank'> Github </a>
-                      {/* <a href='https://krish-personal-website.web.app/' className='btn btn-outline-primary' target='_blank'> Project </a> */}
                     </div>
                   </article>
                 </div> 

@@ -286,7 +286,7 @@ export const Skills = () => {
                 <h5> Download my Resume by clicking this button! </h5>
                 <div className='resume-button'>
                   <a href={resume}
-                      download="Krish's Resume (Jan 2023)"
+                      download="Krish's Resume (Aug 2024)"
                       target="_blank"
                       rel="noreferrer">
                   
@@ -295,7 +295,7 @@ export const Skills = () => {
                     </button>
                   </a>
                 </div>
-                <p> My resume as of Feb 2024 </p>
+                <p> My resume as of Aug 2024 </p>
               </div>
             </Row>
       </Container>
