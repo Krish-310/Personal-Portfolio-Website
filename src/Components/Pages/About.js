@@ -45,10 +45,11 @@ export const About = () => {
 
           <div className='centred-list'>
           - Research! (Very enthsiastic!) <br/>
-          - Software Development (Proficient) <br/>
-          - Full-Stack Development (Proficient) <br/>
+          - Systems Development (Proficient) <br/>
+          - Robotics (Strong foundation) <br/>
           - Data Science & Machine Learning (Strong foundation) <br/>
-          - Cybersecurity (Intermediate, willing to learn!) <br/>
+          - Cybersecurity (Intermediate and learning!) <br/>
+          - Full-Stack Development (Proficient) <br/>
           </div>
           <br/>
           My exploration into each of these fields has led to my interest in them only growing. <br/>

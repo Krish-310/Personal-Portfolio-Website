@@ -11,17 +11,92 @@ export const Career = () => {
                             <div class="date-content">
                                 <div class="date-outer">
                                     <span class="date">
-                                            <span class="month">Winter/Spring</span>
+                                            <span class="month">Summer/Fall</span>
                                     <span class="year">2025</span>
                                     </span>
                                 </div>
                             </div>
                             <div class="timeline-content">
-                                <h5 class="title">Seeking an Internship for my next Co-op Term!</h5>
+                                <h5 class="title">Seeking an Internship!</h5>
                                 <p class="description">
-                                    I'm looking for an internship for 2025, either in the Winter or Spring! I'm interested
-                                    in many fields, such as Software Dev, AI/ML, Cybersecurity and more.
+                                    I'm looking for an internship for 2025, either in the Summer or Fall! I'm interested
+                                    in many fields, such as Systems Dev, Robotics, AI/ML, Cybersecurity and more.
                                     Feel free to reach out to me anytime!
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="timeline">
+                            <div class="icon"></div>
+                            <div class="date-content">
+                                <div class="date-outer">
+                                    <span class="date">
+                                            <span class="month">Winter</span>
+                                    <span class="year">2025</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="timeline-content">
+                                <h5 class="title">Software Developer Co-op (Fleet Core) at OTTO Motors</h5>
+                                <p class="description">
+                                    I'm currently workking at OTTO Motors on the Fleet Core team, working on designing an interoperabiltiy layer for the OTTO AMR Fleet Management System. Here are some highlights; <br/> < br/>
+                                    <ul>
+                                      <li>
+                                        Leveraging C++, Python and ROS2 to improve communication and coordination between AMRs and integration with external fleets and systems
+                                      </li>
+                                    </ul>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="timeline">
+                            <div class="icon"></div>
+                            <div class="date-content">
+                                <div class="date-outer">
+                                    <span class="date">
+                                            <span class="month">Winter</span>
+                                    <span class="year">2025</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="timeline-content">
+                                <h5 class="title">Waterloo Aerial Robotics Group</h5>
+                                <p class="description">
+                                    As an extracurricular, I'm working as a team member on the Autonomy and Firmware teams at WARG. < br/> <br/>
+                                    <ul>
+                                      <li>
+                                        Created a 2D drone simulation in Python and resolved critical OpenCV bugs to get a functional image feed
+                                      </li>
+                                      <li>
+                                        Tuned hyperparameters for a YOLOv8 object detection model to detect landing pads with a 95% mean Average Precision
+                                      </li>
+                                    </ul>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="timeline">
+                            <div class="icon"></div>
+                            <div class="date-content">
+                                <div class="date-outer">
+                                    <span class="date">
+                                            <span class="month">Fall</span>
+                                    <span class="year">2024</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="timeline-content">
+                                <h5 class="title">Research Assistant at UW & the Vector Institute</h5>
+                                <p class="description">
+                                    I did a URA under Prof. Xi He, in the field of Data Security and Privacy. I worked to help organize the MIDST competiton conducted by the Vector Institute.< br/> <br/>
+                                    <ul>
+                                      <li>
+                                        Implemented baseline black-box Membership Inference Attacks (DOMIAS) on AI-generated synthetic data
+                                      </li>
+                                      <li>
+                                        Configured a ClavaDDPM Diffusion Model to create synthetic data from a Single-Table dataset, using Python with Jupyter to train the model and generate synthetic data with 900,000+ entries
+                                      </li>
+                                    </ul>
                                 </p>
                             </div>
                         </div>
@@ -80,7 +155,6 @@ export const Career = () => {
                             </div>
                         </div>
 
-
                         <div class="timeline">
                             <div class="icon"></div>
                             <div class="date-content">
@@ -117,12 +191,6 @@ export const Career = () => {
                                     </p>
                             </div>
                         </div>
-
-                        
-
-                        
-
-
 
                         <div class="timeline">
                             <div class="icon"></div>
@@ -163,10 +231,7 @@ export const Career = () => {
                                   </p>
                             </div>
                         </div>
-
-
                        
-
                         <div class="timeline">
                             <div class="icon"></div>
                             <div class="date-content">
@@ -186,7 +251,6 @@ export const Career = () => {
                             </div>
                         </div>
 
-                        
                     </div>
             </div>    
     </div>

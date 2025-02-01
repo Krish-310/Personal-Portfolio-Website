@@ -5,6 +5,7 @@ import giphygram from '../../Assets/Images/giphygram.png';
 import finvest_advsior from '../../Assets/Images/finvestadvisor.png';
 import raiinet from '../../Assets/Images/raiinet.png';
 import pycc1 from '../../Assets/Images/pycc1.png';
+import procMon from '../../Assets/Images/procMon.png';
 import bookstore from '../../Assets/Images/bookdraft.png';
 
 export const Projects = () => {
@@ -86,13 +87,13 @@ export const Projects = () => {
                   <article className='portolio-item'>
                     <div className='portfolio-item-image'>
                     <div className='image-wrap'>
-                        <img className='p-image' src={bookstore} alt=""/>
-                        <p className='portfolio-item-desc'> NodeJS, Express,js, React, <br/> MongoDB, AWS </p>
+                        <img className='p-image' src={procMon} alt=""/>
+                        <p className='portfolio-item-desc'> C++, libproc, mach, ncurses </p>
                       </div>
                     </div>
-                    <h3> Used Book Store </h3>
+                    <h3> Process Monitor </h3>
                     <div className='portfolio-item-btns'>
-                      <a href='https://github.com/Krish-310/Used-Book-Store' className='btn btn-outline-dark' target='_blank'> Github </a>
+                      <a href='https://github.com/Krish-310/Process-Monitor' className='btn btn-outline-dark' target='_blank'> Github </a>
                     </div>
                   </article>
                 </div> 
@@ -102,25 +103,47 @@ export const Projects = () => {
         </Row>
         <Row className='project-row'>
           <Col sm={6}>
-            <div className="project-container">
-              <div className="thecard">
-                <div className='project-front'>
-                  <article className='portolio-item'>
-                    <div className='portfolio-item-image'>
-                    <div className='image-wrap'>
-                        <img className='p-image' src={pycc1} alt=""/>
-                        <p className='portfolio-item-desc'> Python, APIs, Tkinter </p>
+              <div className="project-container">
+                <div className="thecard">
+                  <div className='project-front'>
+                    <article className='portolio-item'>
+                      <div className='portfolio-item-image'>
+                      <div className='image-wrap'>
+                          <img className='p-image' src={bookstore} alt=""/>
+                          <p className='portfolio-item-desc'> NodeJS, Express,js, React, <br/> MongoDB, AWS </p>
+                        </div>
                       </div>
-                    </div>
-                    <h3> Python Currency Converter </h3>
-                    <div className='portfolio-item-btns'>
-                      <a href='https://github.com/Krish-310/Python-Currency-Converter' className='btn btn-outline-dark' target='_blank'> Github </a>
-                    </div>
-                  </article>
-                </div> 
+                      <h3> Used Book Store </h3>
+                      <div className='portfolio-item-btns'>
+                        <a href='https://github.com/Krish-310/Used-Book-Store' className='btn btn-outline-dark' target='_blank'> Github </a>
+                      </div>
+                    </article>
+                  </div> 
+                </div>
               </div>
-            </div>
-          </Col>
+            </Col>
+            <Col sm={6}>
+              <div className="project-container">
+                <div className="thecard">
+                  <div className='project-front'>
+                    <article className='portolio-item'>
+                      <div className='portfolio-item-image'>
+                      <div className='image-wrap'>
+                          <img className='p-image' src={pycc1} alt=""/>
+                          <p className='portfolio-item-desc'> Python, APIs, Tkinter </p>
+                        </div>
+                      </div>
+                      <h3> Python Currency Converter </h3>
+                      <div className='portfolio-item-btns'>
+                        <a href='https://github.com/Krish-310/Python-Currency-Converter' className='btn btn-outline-dark' target='_blank'> Github </a>
+                      </div>
+                    </article>
+                  </div> 
+                </div>
+              </div>
+            </Col>
+        </Row>
+        <Row className='project-row'>
           <Col sm={6}>
             <div className="project-container">
               <div className="thecard">
@@ -142,6 +165,27 @@ export const Projects = () => {
               </div>
             </div>
           </Col>
+          {/* <Col sm={6}>
+            <div className="project-container">
+              <div className="thecard">
+                <div className='project-front'>
+                  <article className='portolio-item'>
+                    <div className='portfolio-item-image'>
+                    <div className='image-wrap'>
+                        <img className='p-image' src={} alt=""/>
+                        <p className='portfolio-item-desc'> Python, Tensorflow, OpenCV, GCP </p>
+                      </div>
+                    </div>
+                    <h3> OCR API </h3>
+                    <div className='portfolio-item-btns'>
+                      <a href='' className='btn btn-outline-dark' target='_blank'> Github </a>
+                      <a href='' className='btn btn-outline-primary' target='_blank'> Project </a>
+                    </div>
+                  </article>  
+                </div> 
+              </div>
+            </div>
+          </Col> */}
         </Row>
       </Container>
     </section>
