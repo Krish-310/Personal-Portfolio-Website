@@ -33,15 +33,15 @@ export const Skills = () => {
               <div className='information'>
                 <h2> Languages </h2>
                 <Row className='row-centered'>
-                  {createSkill('C++', 100)}
                   {createSkill('Python', 100)}
+                  {createSkill('C++', 100)}
                   {createSkill('C', 95)}
+                  {createSkill('Rust', 80)}
                   {createSkill('Bash', 100)}
+                  {createSkill('SQL',90)}
+                  {createSkill('JS/TS', 85)}
                   {createSkill('Go', 85)}
                   {createSkill('R', 80)}
-                  {createSkill('SQL', 75)}
-                  {createSkill('Javascript', 70)}
-                  {createSkill('Typescript', 60)}
                 </Row>
               </div>
             </div>
@@ -51,12 +51,11 @@ export const Skills = () => {
                 <Row className='row-centered'>
                   {createSkill('ROS2', 95)}
                   {createSkill('Node.js', 90)}
-                  {createSkill('Express.js', 90)}
-                  {createSkill('React', 80)}
+                  {createSkill('React', 90)}
                   {createSkill('MongoDB', 80)}
                   {createSkill('Bootstrap', 90)}
                   {createSkill('TailwindCSS', 80)}
-                  {createSkill('Next.js', 60)}
+                  {createSkill('Next.js', 70)}
                   {createSkill('GTest', 95)}
                 </Row>
               </div>
@@ -70,14 +69,10 @@ export const Skills = () => {
                   {createSkill('Kubernetes', 100)}
                   {createSkill('Jenkins', 100)}
                   {createSkill('Sonarqube', 100)}
-                  {/* {createSkill('gcov', 95)} */}
-                  {createSkill('QEMU', 90)}
-                  {createSkill('QNX', 80)}
-                  {createSkill('GCP', 70)}
-                  {/* {createSkill('Conan', 90)}
-                  {createSkill('CMake', 95)}
-                  {createSkill('Jupyter', 85)}
-                  {createSkill('Colab', 90)} */}
+                  {createSkill('Snowflake', 90)}
+                  {createSkill('Datadog', 100)}
+                  {createSkill('Amplitude', 95)}
+                  {createSkill('Nix', 80)}
                 </Row>
               </div>
             </div>
@@ -90,11 +85,8 @@ export const Skills = () => {
                   {createSkill('Matplotlib', 100)}
                   {createSkill('Scikit-Learn', 80)}
                   {createSkill('Tensorflow', 90)}
-                  {createSkill('Seaborn', 70)}
                   {createSkill('OpenCV', 90)}
                   {createSkill('OpenVX', 85)}
-                  {createSkill('Xlib', 90)}
-                  {createSkill('ncurses', 90)}
                   {createSkill('Boost', 85)}
                   {createSkill('YOLO', 70)}
 
@@ -107,7 +99,7 @@ export const Skills = () => {
             <h5> Download my Resume over here! </h5>
             <div className='resume-button'>
               <a href={resume}
-                  download="Krish's Resume (Jan 2025)"
+                  download="Krish's Resume (Aug 2025)"
                   target="_blank"
                   rel="noreferrer">
                 <button type="button" className="btn btn-info btn-lg">
@@ -115,7 +107,7 @@ export const Skills = () => {
                 </button>
               </a>
             </div>
-            <p> Last updated: Jan 2025 </p>
+            <p> Last updated: Aug 2025 </p>
           </div>
         </Row>
       </Container>

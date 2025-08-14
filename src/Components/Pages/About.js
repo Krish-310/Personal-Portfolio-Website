@@ -10,12 +10,9 @@ export const About = () => {
   return (
     <div className='about-page'>
       <div className='about-me'>
-        <p> 
+        <p>
 
-
-
-
-          <h2> My name is Krish Kochar </h2> <br/>
+          <h2> Hey, I'm Krish </h2> <br/>
 
           <div className='profile-pic-container'>
             <img alt='' src={krish_img} className='profile-pic'/>
@@ -23,10 +20,10 @@ export const About = () => {
 
           <br/><br/>
 
-          I'm a Co-op student studying Computer Science at the Univeristy of Waterloo. I am currently in
-          the third year of my undergrad education (Junior Year). 
+          I'm a Co-op student studying Computer Science at the University of Waterloo, with a specialization in Artificial Intelligence. I am currently in
+          my third year of undergrad(junior year).
 
-          <br/><br/><br/>
+          <br/><br/>
 
           <h3> A little bit about me </h3> <br/>
 
@@ -38,47 +35,36 @@ export const About = () => {
           </div>
           <br/>
 
-          Fun Fact: I like the colour black (if you couldn't already tell XD)
+          Fun Fact: I like the colour black (if you couldn't already tell XD) <br/>
 
-          <br/> <br/> <br/>
+          <br/> <br/>
           <h3> My Interests</h3> <br/>
 
           <div className='centred-list'>
-          - Research! (Very enthsiastic!) <br/>
-          - Systems Development (Proficient) <br/>
-          - Robotics (Strong foundation) <br/>
-          - Data Science & Machine Learning (Strong foundation) <br/>
-          - Cybersecurity (Intermediate and learning!) <br/>
-          - Full-Stack Development (Proficient) <br/>
+            Software Engineering <br/>
+            Systems Development <br/>
+            Robotics <br/>
+            Artificial Intelligence & Machine Learning <br/>
+            Cybersecurity <br/>
           </div>
           <br/>
-          My exploration into each of these fields has led to my interest in them only growing. <br/>
-          I have experience in <b>Software and Full-Stack Development</b> and am further developing upon it. <br/>
-          However, I also want to explore other fields before committing to the one I enjoy the most. <br/>
-          For that reason, I'm exploring <b>Data Science and Cybersecurity </b> as options, and I love them so far. <br/>
-          I am also very excited about working in <b>Research</b>. I'm actively seeking a <b>URA/URF</b> to learn more! < br/>
-          
+          I'm also very excited about working in <b>Research</b> and am actively seeking <b>URAs</b> and other opportunities to learn more! <br/>
 
-          <br/> <br/> <br/>
-          <h3> My Other Hobbies </h3> <br/>
+
+          <br/> <br/>
+          <h3> My Hobbies & Interets </h3> <br/>
 
           <div className='centred-list'>
-          - Speedcubing <br/>
-          - Chess <br/>
-          - Pool <br/>
-          - Table Tennis  <br/>
-          - Badminton <br/>
-          - Reading <br/>
-          - Binging Movies & Shows <br/>
-          - Games <br/>
+           Speedcubing <br/>
+           Board Games <br/>
+           Volleyball <br/>
+           Pokemon <br/>
+           Marvel <br/>
+           TV Shows + Movies + Anime :P <br/>
+
           </div>
-          <br/>
 
-          Some of my favourite works of fiction are Harry Potter, Percy Jackson, Marvel and Pokemon. 
-          
-
-
-          <br/> <br/> <br/>
+          <br/> <br/>
           <h3> My Core Values </h3> <br/>
 
           <Row className='values'>
@@ -100,7 +86,7 @@ export const About = () => {
                   </div>
                   <div className='value-content'>
                     <h4>Innovation</h4>
-                    <p>  Is very important for any individual. New ideas and ways of thinking are what drives our world forward. </p>
+                    <p>  is very important for any individual. New ideas and ways of thinking are what drives our world forward. </p>
                   </div>
                 </div>
             </Col>
@@ -111,18 +97,18 @@ export const About = () => {
                   </div>
                   <div className='value-content'>
                     <h4>Lifelong Learning </h4>
-                    <p> Always appealed to me as someone who loves to learn. Is responsible for my interest in research.  </p>
+                    <p> always appealed to me as someone who loves to learn. Is responsible for my interest in research.  </p>
                   </div>
                 </div> 
             </Col>
           </Row>
 
 
-          <br/><br/><br/><br/>
+          <br/><br/>
           You can find me on my Social Media! <br/>
           Feel free to reach out anytime! I would love to talk! <br/>
 
-          <br/><br/>
+          <br/>
         </p>
       </div>
     </div>

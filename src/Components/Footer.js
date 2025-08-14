@@ -34,7 +34,7 @@ export const Footer = () => {
                     <Col sm={3}>
                         <div className='footer-text'>
                         <p className='text'> Thanks for visiting my website! <br/>
-                            Last updated Aug 2024 <br/>
+                            Last updated Aug 2025 <br/>
                             Images sourced from <a href='https://www.vecteezy.com/'> vecteezy.com </a> <br/>
                             &#169; Copyright 2023. All Rights Reserved. </p>
                         </div>

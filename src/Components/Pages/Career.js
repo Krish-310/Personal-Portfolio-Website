@@ -11,16 +11,16 @@ export const Career = () => {
                             <div class="date-content">
                                 <div class="date-outer">
                                     <span class="date">
-                                            <span class="month">Summer/Fall</span>
-                                    <span class="year">2025</span>
+                                            <span class="month">ALL</span>
+                                    <span class="year">2026</span>
                                     </span>
                                 </div>
                             </div>
                             <div class="timeline-content">
                                 <h5 class="title">Seeking an Internship!</h5>
                                 <p class="description">
-                                    I'm looking for an internship for 2025, either in the Summer or Fall! I'm interested
-                                    in many fields, such as Systems Dev, Robotics, AI/ML, Cybersecurity and more.
+                                    I'm looking for an internship for 2026! I'm interested
+                                    in many fields, such as Software Engineering, Systems Dev, Robotics, AI/ML, Cybersecurity and more.
                                     Feel free to reach out to me anytime!
                                 </p>
                             </div>
@@ -31,19 +31,31 @@ export const Career = () => {
                             <div class="date-content">
                                 <div class="date-outer">
                                     <span class="date">
-                                            <span class="month">Winter</span>
+                                            <span class="month">Summer</span>
                                     <span class="year">2025</span>
                                     </span>
                                 </div>
                             </div>
                             <div class="timeline-content">
-                                <h5 class="title">Software Developer Co-op (Fleet Core) at OTTO Motors</h5>
+                                <h5 class="title">SWE @ Super.com</h5>
                                 <p class="description">
-                                    I'm currently workking at OTTO Motors on the Fleet Core team, working on designing an interoperabiltiy layer for the OTTO AMR Fleet Management System. Here are some highlights; <br/> < br/>
+                                    I worked at Super.com as a Software Engineer Intern, on their newly launched Flights product. Here are some highlights; <br/> < br/>
                                     <ul>
-                                      <li>
-                                        Leveraging C++, Python and ROS2 to improve communication and coordination between AMRs and integration with external fleets and systems
-                                      </li>
+                                        <li>
+                                            Engineered a low-latency Python/FastAPI backend for the new Flights product, with sub-150ms latency per call
+                                        </li>
+                                        <li>
+                                            Automated the refund dispute workflow, reducing manual handling time by 70% using an async webhook API
+                                        </li>
+                                        <li>
+                                            Built an order-level fraud check in the payments API using a 3rd-party vendor, cutting fraudulent bookings by 22%
+                                        </li>
+                                        <li>
+                                            Discovered & resolved 5+ major bugs as on-call production lead, lowering mean time to resolution by 50%
+                                        </li>
+                                        <li>
+                                            Crafted React components using TypeScript for unauthenticated website flows and improved page load speed by 25%
+                                        </li>
                                     </ul>
                                 </p>
                             </div>
@@ -60,15 +72,21 @@ export const Career = () => {
                                 </div>
                             </div>
                             <div class="timeline-content">
-                                <h5 class="title">Waterloo Aerial Robotics Group</h5>
+                                <h5 class="title">Software Dev @ OTTO Motors</h5>
                                 <p class="description">
-                                    As an extracurricular, I'm working as a team member on the Autonomy and Firmware teams at WARG. < br/> <br/>
+                                    I worked at OTTO Motors on the Fleet Core team, designing an interoperability layer for the OTTO AMR Fleet Management System. Here are some highlights; <br/> < br/>
                                     <ul>
                                       <li>
-                                        Created a 2D drone simulation in Python and resolved critical OpenCV bugs to get a functional image feed
+                                        Developed an AMR fleet interoperability system with C++, Python & ROS2 to improve coordination for 500+ robots
                                       </li>
                                       <li>
-                                        Tuned hyperparameters for a YOLOv8 object detection model to detect landing pads with a 95% mean Average Precision
+                                        Migrated network architecture from CycloneDDS to Zenoh, leading to 25% lower latency & 30% higher data throughput
+                                      </li>
+                                      <li>
+                                        Replaced polling with an event-driven ROS2 topic for real-time robot tracking, reducing CPU usage by 20%
+                                      </li>
+                                      <li>
+                                        Tuned Kubernetes container images & Helm charts to improve dynamic configuration, boosting deployment flexibility
                                       </li>
                                     </ul>
                                 </p>
@@ -86,7 +104,7 @@ export const Career = () => {
                                 </div>
                             </div>
                             <div class="timeline-content">
-                                <h5 class="title">Research Assistant at UW & the Vector Institute</h5>
+                                <h5 class="title">Research @ UW & Vector Institute</h5>
                                 <p class="description">
                                     I did a URA under Prof. Xi He, in the field of Data Security and Privacy. I worked to help organize the MIDST competiton conducted by the Vector Institute.< br/> <br/>
                                     <ul>
@@ -112,7 +130,7 @@ export const Career = () => {
                                 </div>
                             </div>
                             <div class="timeline-content">
-                                <h5 class="title">Platform Software Developer Intern at Ford</h5>
+                                <h5 class="title">Platform Software Dev @ Ford</h5>
                                 <p class="description">
                                     I interned at Ford Motor Company as a Platform Software Developer, working on the FNV4 Operating System. Here are some highlights; <br/> < br/>
                                     <ul>
@@ -149,8 +167,8 @@ export const Career = () => {
                             <div class="timeline-content">
                                 <h5 class="title">Wat.AI Design Team - Core Member</h5>
                                 <p class="description">
-                                    After being selected to be a member of the Energy Modelling Project, I began using Python to create ML models that predict energy consumption in households to improve Sustainability.
-                                    I have gained experience on performing EDA with Jupyter & look forward to completing the rest of the project.
+                                    After being selected to be a member of the Energy Modelling Project, I used Python to create ML models that predict energy consumption in households to improve Sustainability.
+                                    I gained experience performing EDA with Jupyter and built a Linear Regression model with Scikit-Learn to predict energy consumption.
                                 </p>
                             </div>
                         </div>
@@ -166,7 +184,7 @@ export const Career = () => {
                                 </div>
                             </div>
                             <div class="timeline-content">
-                                <h5 class="title">Intern, Engineering Co-op at Publicis Sapient</h5>
+                                <h5 class="title">SWE @ Publicis Sapient</h5>
                                 <p class="description">
                                     For my first Co-op work term, I interned at Publicis Sapient, working
                                     in the area of backend development. Here are some highlights; <br/> < br/>

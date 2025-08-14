@@ -10,7 +10,7 @@ export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0)
     const [isDeleting, setIsDeleting] = useState(false)
 
-    const toRotate = ["Programmer", "Software Developer",  "Data Scientist"]
+    const toRotate = ["Software Engineer", "Systems Developer", "Data Scientist"]
 
     const [text, setText] = useState('')
     const [delta, setDelta] = useState(300 - Math.random() * 100)
@@ -59,10 +59,10 @@ export const Banner = () => {
                         <span className='wrap blinking-cursor'> | </span>
                     </span>
                     </h1>
-                    <p> I'm a Computer Science student at the University of Waterloo. I'm in my 3B term (Junior year) and am 
-                        seeking Co-op opportunities for the Summer/Fall of 2025. I enjoy programming and am exploring my interest in the
+                    <p> I'm a Computer Science student at the University of Waterloo. I'm in my 3B term and am 
+                        seeking Co-op opportunities for 2026. I love making new things and am exploring my interest in the
                         fields of Systems Development, Robotics, AI and Cybersecurity. Feel free to
-                        get in touch with me anytime!
+                        get in touch with me anytime! 
                     </p>
                     <button id='myButton' type='button' className="btn btn-dark" onClick={() => {
                         window.open(resume); 

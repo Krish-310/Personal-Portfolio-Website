@@ -848,11 +848,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   height: 100%;
   object-fit: cover;
   transition: transform 0.3s ease-in-out;
-  transform: scale(1.5); 
+  transform: scale(1.1); 
 }
 
 .profile-pic:hover {
-  transform: scale(1.7);
+  transform: scale(1.2);
 }
 
 .cat-pic img {
