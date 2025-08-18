@@ -30,7 +30,7 @@ export const Projects = () => {
                     <h3> Personal Portfolio Website </h3>
                     <div className='portfolio-item-btns'>
                       <a href='https://github.com/Krish-310/Personal-Portfolio-Website' className='btn btn-outline-dark' target='_blank'> Github </a>
-                      <a href='https://krish-personal-website.web.app/' className='btn btn-outline-primary' target='_blank'> Project </a>
+                      <a href='https://krishkochar.com' className='btn btn-outline-primary' target='_blank'> Project </a>
                     </div>
                   </article>
                 </div> 

@@ -6,7 +6,7 @@ Here is a screenshot of the Landing of my Website:
 
 ![Landing Page](https://github.com/Krish-310/Personal-Portfolio-Website/assets/106371197/313c2910-9e46-4673-85d6-a2aa4270c37d)
 
-This project is being hosted at: https://krish-personal-website.web.app/
+This project is being hosted at: https://krishkochar.com
 
 
 The website was developed using React and NodeJS, along with some HTML, CSS and Bootstrap. 
