@@ -7,6 +7,7 @@ import raiinet from '../../Assets/Images/raiinet.png';
 import pycc1 from '../../Assets/Images/pycc1.png';
 import procMon from '../../Assets/Images/procMon.png';
 import bookstore from '../../Assets/Images/bookdraft.png';
+import oracle from '../../Assets/Images/oracle-image.png';
 
 export const Projects = () => {
 
@@ -23,14 +24,13 @@ export const Projects = () => {
                   <article className='portolio-item'>
                     <div className='portfolio-item-image'>
                       <div className='image-wrap'>
-                        <img className='p-image' src={portfolio_img} alt=""/>
-                        <p className='portfolio-item-desc'> ReactJS, CSS, Bootstrap, <br/> NodeJS, Express.js </p>
+                        <img className='p-image' src={oracle} alt=""/>
+                        <p className='portfolio-item-desc'> Python. FastAPI, Cerebras, <br/> Ollama, ChromaDB, Typescript </p>
                       </div>
                     </div>
-                    <h3> Personal Portfolio Website </h3>
+                    <h3> Oracle - AI Code Review Buddy </h3>
                     <div className='portfolio-item-btns'>
-                      <a href='https://github.com/Krish-310/Personal-Portfolio-Website' className='btn btn-outline-dark' target='_blank'> Github </a>
-                      <a href='https://krishkochar.com' className='btn btn-outline-primary' target='_blank'> Project </a>
+                      <a href='https://github.com/Krish-310/aura' className='btn btn-outline-dark' target='_blank'> Github </a>
                     </div>
                   </article>
                 </div> 
@@ -165,27 +165,27 @@ export const Projects = () => {
               </div>
             </div>
           </Col>
-          {/* <Col sm={6}>
+          <Col sm={6}>
             <div className="project-container">
               <div className="thecard">
                 <div className='project-front'>
                   <article className='portolio-item'>
                     <div className='portfolio-item-image'>
-                    <div className='image-wrap'>
-                        <img className='p-image' src={} alt=""/>
-                        <p className='portfolio-item-desc'> Python, Tensorflow, OpenCV, GCP </p>
+                      <div className='image-wrap'>
+                        <img className='p-image' src={portfolio_img} alt=""/>
+                        <p className='portfolio-item-desc'> ReactJS, CSS, Bootstrap, <br/> NodeJS, Express.js </p>
                       </div>
                     </div>
-                    <h3> OCR API </h3>
+                    <h3> Personal Portfolio Website </h3>
                     <div className='portfolio-item-btns'>
-                      <a href='' className='btn btn-outline-dark' target='_blank'> Github </a>
-                      <a href='' className='btn btn-outline-primary' target='_blank'> Project </a>
+                      <a href='https://github.com/Krish-310/Personal-Portfolio-Website' className='btn btn-outline-dark' target='_blank'> Github </a>
+                      <a href='https://krishkochar.com' className='btn btn-outline-primary' target='_blank'> Project </a>
                     </div>
-                  </article>  
+                  </article>
                 </div> 
               </div>
             </div>
-          </Col> */}
+          </Col>
         </Row>
       </Container>
     </section>
