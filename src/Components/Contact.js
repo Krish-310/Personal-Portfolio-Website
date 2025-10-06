@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import Cats from '../Assets/Images/cats.png'
+import emailjs from '@emailjs/browser'
 
 export const Contact = () => {
 
@@ -25,21 +26,32 @@ export const Contact = () => {
     
       const handleSubmit = async (e) => {
         e.preventDefault();
-        setButtonText("Sending...(Hold on...)");
-        let response = await fetch("https://krish-personal-website-mailer.onrender.com/contact", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json;charset=utf-8",
-          },
-          body: JSON.stringify(formDetails),
-        });
-        setButtonText("Send");
-        let result = await response.json();
-        setFormDetails(formInitialDetails);
-        if (result.code === 200) {
-          setStatus({ success: true, message: 'Message sent successfully'});
-        } else {
-          setStatus({ success: false, message: 'Something went wrong, please try again later.'});
+        setButtonText("Sending...");
+        
+        // EmailJS configuration - you'll need to replace these with your actual values
+        const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_ID || 'YOUR_SERVICE_ID';
+        const templateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID || 'YOUR_TEMPLATE_ID';
+        const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY || 'YOUR_PUBLIC_KEY';
+        
+        // Prepare template parameters for EmailJS
+        const templateParams = {
+          from_name: `${formDetails.firstName} ${formDetails.lastName}`,
+          from_email: formDetails.email,
+          phone: formDetails.phone,
+          message: formDetails.message,
+          to_email: 'krishkochar@gmail.com', // Your email
+        };
+
+        try {
+          const result = await emailjs.send(serviceId, templateId, templateParams, publicKey);
+          console.log('Email sent successfully:', result);
+          setButtonText("Send");
+          setFormDetails(formInitialDetails);
+          setStatus({ success: true, message: 'Message sent successfully!' });
+        } catch (error) {
+          console.error('Email send failed:', error);
+          setButtonText("Send");
+          setStatus({ success: false, message: 'Something went wrong, please try again later.' });
         }
       };
 

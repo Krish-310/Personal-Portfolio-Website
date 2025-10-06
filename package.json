@@ -3,6 +3,7 @@
   "version": "1.0.1",
   "private": true,
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@jridgewell/sourcemap-codec": "latest",
     "@rollup/plugin-terser": "latest",
     "@svgr/plugin-svgo": "^8.0.1",
