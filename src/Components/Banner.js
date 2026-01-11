@@ -59,9 +59,9 @@ export const Banner = () => {
                         <span className='wrap blinking-cursor'> | </span>
                     </span>
                     </h1>
-                    <p> I'm a Computer Science student at the University of Waterloo. I'm in my 3B term and am 
+                    <p> I'm a Computer Science student at the University of Waterloo. I'm in my 4A term and am 
                         seeking Co-op opportunities for 2026. I love making new things and am exploring my interest in the
-                        fields of Systems Development, Robotics, AI and Cybersecurity. Feel free to
+                        fields of Systems Development, Robotics, AI and Security. Feel free to
                         get in touch with me anytime! 
                     </p>
                     <button id='myButton' type='button' className="btn btn-dark" onClick={() => {

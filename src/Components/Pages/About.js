@@ -21,7 +21,7 @@ export const About = () => {
           <br/><br/>
 
           I'm a Co-op student studying Computer Science at the University of Waterloo, with a specialization in Artificial Intelligence. I am currently in
-          my third year of undergrad(junior year).
+          my fourth year of undergrad (senior year).
 
           <br/><br/>
 
@@ -45,7 +45,7 @@ export const About = () => {
             Systems Development <br/>
             Robotics <br/>
             Artificial Intelligence & Machine Learning <br/>
-            Cybersecurity <br/>
+            Technical Security & Privacy <br/>
           </div>
           <br/>
           I'm also very excited about working in <b>Research</b> and am actively seeking <b>URAs</b> and other opportunities to learn more! <br/>

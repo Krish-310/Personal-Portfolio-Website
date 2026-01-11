@@ -36,11 +36,11 @@ export const Skills = () => {
                   {createSkill('Python', 100)}
                   {createSkill('C++', 100)}
                   {createSkill('C', 95)}
+                  {createSkill('Go', 90)}
                   {createSkill('Rust', 80)}
                   {createSkill('Bash', 100)}
                   {createSkill('SQL',90)}
                   {createSkill('JS/TS', 85)}
-                  {createSkill('Go', 85)}
                   {createSkill('R', 80)}
                 </Row>
               </div>

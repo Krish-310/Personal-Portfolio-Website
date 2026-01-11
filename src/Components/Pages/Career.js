@@ -42,7 +42,7 @@ export const Career = () => {
                                     I worked at Super.com as a Software Engineer Intern, on their newly launched Flights product. Here are some highlights; <br/> < br/>
                                     <ul>
                                         <li>
-                                            Engineered a low-latency Python/FastAPI backend for the new Flights product, with sub-150ms latency per call
+                                            Engineered a low-latency Go backend for the new Flights product, with sub-150ms latency per call
                                         </li>
                                         <li>
                                             Automated the refund dispute workflow, reducing manual handling time by 70% using an async webhook API
