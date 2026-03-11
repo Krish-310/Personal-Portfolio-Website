@@ -10,7 +10,7 @@ export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0)
     const [isDeleting, setIsDeleting] = useState(false)
 
-    const toRotate = ["Software Engineer", "Systems Developer", "Data Scientist"]
+    const toRotate = ["Software Engineer", "Systems Engineer", "Security Engineer"]
 
     const [text, setText] = useState('')
     const [delta, setDelta] = useState(300 - Math.random() * 100)

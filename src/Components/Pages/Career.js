@@ -31,6 +31,32 @@ export const Career = () => {
                             <div class="date-content">
                                 <div class="date-outer">
                                     <span class="date">
+                                            <span class="month">Winter</span>
+                                    <span class="year">2026</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="timeline-content">
+                                <h5 class="title">Research @ UWaterloo</h5>
+                                <p class="description">
+                                    I am doing a URA under Prof. Sujaya Maiyya on designing an Oblivious Vector Database.  <br/> < br/>
+                                    <ul>
+                                        <li>
+                                           Designing a privacy-preserving oblivious vectorDB for secure, efficient similarity search that hides access patterns
+                                        </li>
+                                        <li>
+                                            Building an oblivious HNSW similarity search in C++ within TEEs to minimize query latency & side-channel leakages
+                                        </li>
+                                    </ul>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="timeline">
+                            <div class="icon"></div>
+                            <div class="date-content">
+                                <div class="date-outer">
+                                    <span class="date">
                                             <span class="month">Summer</span>
                                     <span class="year">2025</span>
                                     </span>

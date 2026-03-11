@@ -8,39 +8,76 @@ import instagram from '../Assets/Images/insta.svg'
 import github from '../Assets/Images/github-mark-white.svg'
 
 export const Footer = () => {
-  return (
+    return (
         <footer className='footer'>
             <script src="https://kit.fontawesome.com/597e5024dc.js" crossOrigin="anonymous"></script>
             <Container>
                 <Row className="align-items-center">
                     <Col sm={3}>
                         <div className='cat'>
-                            <img src={cat} alt=''/>
+                            <img src={cat} alt='' />
                         </div>
                     </Col>
                     <Col sm={6}>
                         <div className='logo'>
-                            <a href='/#home'>  <img src={logo} alt=''/> </a>
+                            <a href='/#home'>  <img src={logo} alt='' /> </a>
                         </div>
                         <div className='wrapping'>
-                        <div className='social-icon icon-footer'>
-                            <a href='http://www.linkedin.com/in/krish310/'> <img src={navIcon1} alt=''/> </a>
-                            <a href='#>' onClick={(e) => alert("AHA! I'm not giving you my Discord! Have a nice day :)")}> <img src={discord} alt=''/> </a>
-                            <a href='https://www.instagram.com/krishy_310/'> <img src={instagram} alt=''/> </a>
-                            <a href='https://github.com/Krish-310'> <img src={github} alt=''/> </a>
-                        </div>
+                            <div className='social-icon icon-footer'>
+                                <a href='http://www.linkedin.com/in/krish310/'> <img src={navIcon1} alt='' /> </a>
+                                <a href='#>' onClick={(e) => alert("AHA! I'm not giving you my Discord! Have a nice day :)")}> <img src={discord} alt='' /> </a>
+                                <a href='https://www.instagram.com/krishy_310/'> <img src={instagram} alt='' /> </a>
+                                <a href='https://github.com/Krish-310'> <img src={github} alt='' /> </a>
+                            </div>
+                            <div className='social-icon icon-footer' style={{ marginLeft: '15px' }}>
+                                <style>
+                                    {`
+                                    .webring-arrow {
+                                        color: white;
+                                        z-index: 1;
+                                        position: relative;
+                                        font-weight: bold;
+                                        font-size: 20px;
+                                        line-height: 1;
+                                        transition: 0.3s ease-in-out;
+                                    }
+                                    .social-icon a:hover .webring-arrow {
+                                        color: #000;
+                                    }
+                                    .webring-icon {
+                                        width: 55% !important; 
+                                        margin: auto;
+                                        display: block;
+                                    }
+                                    `}
+                                </style>
+                                <a href='https://cs.uwatering.com/#https://krish-310.github.io/Personal-Portfolio-Website?nav=prev' style={{ textDecoration: 'none' }}>
+                                    <span className="webring-arrow">←</span>
+                                </a>
+                                <a href='https://cs.uwatering.com/#https://krish-310.github.io/Personal-Portfolio-Website' target='_blank' rel='noreferrer'>
+                                    <img
+                                        src='https://cs.uwatering.com/icon.white.svg'
+                                        onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = 'https://cs.uwatering.com/icon.black.svg'; e.currentTarget.style.filter = 'invert(1)'; }}
+                                        alt='CS Webring'
+                                        className="webring-icon"
+                                    />
+                                </a>
+                                <a href='https://cs.uwatering.com/#https://krish-310.github.io/Personal-Portfolio-Website?nav=next' style={{ textDecoration: 'none' }}>
+                                    <span className="webring-arrow">→</span>
+                                </a>
+                            </div>
                         </div>
                     </Col>
                     <Col sm={3}>
                         <div className='footer-text'>
-                        <p className='text'> Thanks for visiting my website! <br/>
-                            Last updated Aug 2025 <br/>
-                            Images sourced from <a href='https://www.vecteezy.com/'> vecteezy.com </a> <br/>
-                            &#169; Copyright 2023. All Rights Reserved. </p>
+                            <p className='text'> Thanks for visiting my website! <br />
+                                Last updated March 2026 <br />
+                                Images sourced from <a href='https://www.vecteezy.com/'> vecteezy.com </a> <br />
+                                &#169; Copyright 2023. All Rights Reserved. </p>
                         </div>
                     </Col>
                 </Row>
             </Container>
         </footer>
-  )
+    )
 }
