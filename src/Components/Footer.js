@@ -51,10 +51,10 @@ export const Footer = () => {
                                     }
                                     `}
                                 </style>
-                                <a href='https://cs.uwatering.com/#https://krish-310.github.io/Personal-Portfolio-Website?nav=prev' style={{ textDecoration: 'none' }}>
+                                <a href='https://cs.uwatering.com/#https://krishkochar.com?nav=prev' style={{ textDecoration: 'none' }}>
                                     <span className="webring-arrow">←</span>
                                 </a>
-                                <a href='https://cs.uwatering.com/#https://krish-310.github.io/Personal-Portfolio-Website' target='_blank' rel='noreferrer'>
+                                <a href='https://cs.uwatering.com/#https://krishkochar.com' target='_blank' rel='noreferrer'>
                                     <img
                                         src='https://cs.uwatering.com/icon.white.svg'
                                         onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = 'https://cs.uwatering.com/icon.black.svg'; e.currentTarget.style.filter = 'invert(1)'; }}
@@ -62,7 +62,7 @@ export const Footer = () => {
                                         className="webring-icon"
                                     />
                                 </a>
-                                <a href='https://cs.uwatering.com/#https://krish-310.github.io/Personal-Portfolio-Website?nav=next' style={{ textDecoration: 'none' }}>
+                                <a href='https://cs.uwatering.com/#https://krishkochar.com?nav=next' style={{ textDecoration: 'none' }}>
                                     <span className="webring-arrow">→</span>
                                 </a>
                             </div>
