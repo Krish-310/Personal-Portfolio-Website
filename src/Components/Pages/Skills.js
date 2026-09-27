@@ -1,116 +1,18 @@
-import React from 'react'
-import '../../App.css'
-import { Container, Row, Col } from 'react-bootstrap'
-import resume from '../../Assets/Documents/krish-resume.pdf'
-import { CircularProgressbar } from 'react-circular-progressbar';
-import 'react-circular-progressbar/dist/styles.css';
+import React from 'react';
+import { Container } from 'react-bootstrap';
+import { ArrowUpRight } from 'react-bootstrap-icons';
+import { HashLink } from 'react-router-hash-link';
 
-export const Skills = () => {
+const groups = [
+  { title: 'Systems & robotics', tools: ['C', 'C++', 'Rust', 'ROS2', 'OpenCV', 'OpenVX', 'Valgrind', 'Gcov'], example: 'Robot fleet interoperability', link: '/career#otto' },
+  { title: 'Backend & distributed systems', tools: ['Go', 'Java', 'Kotlin', 'TypeScript', 'Python', 'Scala', 'FastAPI', 'Redis', 'DynamoDB', 'SQS'], example: 'Resource attribution for Rovo', link: '/career#atlassian' },
+  { title: 'Infrastructure & observability', tools: ['Docker', 'Kubernetes', 'Jenkins', 'Git', 'Bash', 'Datadog', 'Splunk'], example: 'Production debugging & incident response', link: '/career#super' },
+  { title: 'Data & machine learning', tools: ['SQL', 'Spark', 'PyTorch', 'Python', 'Pandas', 'NumPy', 'scikit-learn'], example: 'Synthetic data privacy research', link: '/career#vector-research' },
+];
 
-  const createSkill = (name, percentage) => {
-    return (
-      <Col sm={2}>
-        <div className='skill'>
-          <Row>
-            <div className='progressbar-container'>
-              <CircularProgressbar value={percentage} text={`${percentage}%`} />
-            </div>
-          </Row>
-          <Row>
-            <h3> {name} </h3>
-          </Row>
-        </div>
-      </Col>
-    )
-  }
-
-  return ( 
-    <section className='skills-page'>
-      <Container>
-        <h1> My Technical Skills </h1>
-        <Row className='toprow'>
-            <div className="skills-container">
-              <div className='information'>
-                <h2> Languages </h2>
-                <Row className='row-centered'>
-                  {createSkill('Python', 100)}
-                  {createSkill('C++', 100)}
-                  {createSkill('C', 95)}
-                  {createSkill('Go', 90)}
-                  {createSkill('Rust', 80)}
-                  {createSkill('Bash', 100)}
-                  {createSkill('SQL',90)}
-                  {createSkill('JS/TS', 85)}
-                  {createSkill('R', 80)}
-                </Row>
-              </div>
-            </div>
-            <div className="skills-container">
-              <div className='information'>
-                <h2> Frameworks </h2>
-                <Row className='row-centered'>
-                  {createSkill('ROS2', 95)}
-                  {createSkill('Node.js', 90)}
-                  {createSkill('React', 90)}
-                  {createSkill('MongoDB', 80)}
-                  {createSkill('Bootstrap', 90)}
-                  {createSkill('TailwindCSS', 80)}
-                  {createSkill('Next.js', 70)}
-                  {createSkill('GTest', 95)}
-                </Row>
-              </div>
-            </div>
-            <div className="skills-container">
-              <div className='information'>
-                <h2> Tools & Technologies </h2>
-                <Row className='row-centered'>
-                  {createSkill('Git', 100)}
-                  {createSkill('Docker', 100)}
-                  {createSkill('Kubernetes', 100)}
-                  {createSkill('Jenkins', 100)}
-                  {createSkill('Sonarqube', 100)}
-                  {createSkill('Snowflake', 90)}
-                  {createSkill('Datadog', 100)}
-                  {createSkill('Amplitude', 95)}
-                  {createSkill('Nix', 80)}
-                </Row>
-              </div>
-            </div>
-            <div className="skills-container">
-              <div className='information'>
-                <h2> Libraries </h2>
-                <Row className='row-centered'>
-                  {createSkill('Pandas', 100)}
-                  {createSkill('Numpy', 100)}
-                  {createSkill('Matplotlib', 100)}
-                  {createSkill('Scikit-Learn', 80)}
-                  {createSkill('Tensorflow', 90)}
-                  {createSkill('OpenCV', 90)}
-                  {createSkill('OpenVX', 85)}
-                  {createSkill('Boost', 85)}
-                  {createSkill('YOLO', 70)}
-
-                </Row>
-              </div>
-            </div>
-        </Row>
-        <Row>
-          <div className='resume'>
-            <h5> Download my Resume over here! </h5>
-            <div className='resume-button'>
-              <a href={resume}
-                  download="Krish's Resume (Aug 2025)"
-                  target="_blank"
-                  rel="noreferrer">
-                <button type="button" className="btn btn-info btn-lg">
-                  My Resume!
-                </button>
-              </a>
-            </div>
-            <p> Last updated: Aug 2025 </p>
-          </div>
-        </Row>
-      </Container>
-    </section>
-  )
-}
+export const Skills = () => (
+  <section className="page-section skills-page"><Container>
+    <header className="page-heading"><h1>Skills</h1><p>Languages and tools I've used, with examples of where I've used them.</p></header>
+    <div className="skill-index">{groups.map(group => <section className="skill-row" key={group.title}><h2>{group.title}</h2><div><ul className="skill-tools">{group.tools.map(tool => <li key={tool}>{tool}</li>)}</ul><HashLink className="text-link" to={group.link}>{group.example} <ArrowUpRight aria-hidden="true" /></HashLink></div></section>)}</div>
+  </Container></section>
+);

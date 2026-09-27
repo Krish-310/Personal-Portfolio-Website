@@ -1,116 +1,18 @@
-import React from 'react'
-import sapling from '../../Assets/Images/sapling.jpg'
-import bulb from '../../Assets/Images/bulb.jpg'
-import learn from '../../Assets/Images/learn.jpg'
-import { Row, Col } from 'react-bootstrap'
-import krish_img from '../../Assets/Images/krish_pic.jpeg'
-import cat from '../../Assets/Images/footer_cat.png'
+import React from 'react';
+import { Container } from 'react-bootstrap';
+import { ArrowUpRight } from 'react-bootstrap-icons';
+import portrait from '../../Assets/Images/krish_pic.jpeg';
+import cats from '../../Assets/Images/cats.png';
 
-export const About = () => {
-  return (
-    <div className='about-page'>
-      <div className='about-me'>
-        <p>
-
-          <h2> Hey, I'm Krish </h2> <br/>
-
-          <div className='profile-pic-container'>
-            <img alt='' src={krish_img} className='profile-pic'/>
-          </div>
-
-          <br/><br/>
-
-          I'm a Co-op student studying Computer Science at the University of Waterloo, with a specialization in Artificial Intelligence. I am currently in
-          my fourth year of undergrad (senior year).
-
-          <br/><br/>
-
-          <h3> A little bit about me </h3> <br/>
-
-          I grew up in Singapore, then lived in India for a while, and am now in Canada. <br/>
-          I love cats! They're adorable :) <br/><br/>
-
-          <div className='cat-pic'>
-            <img src={cat} alt=''/>
-          </div>
-          <br/>
-
-          Fun Fact: I like the colour black (if you couldn't already tell XD) <br/>
-
-          <br/> <br/>
-          <h3> My Interests</h3> <br/>
-
-          <div className='centred-list'>
-            Software Engineering <br/>
-            Systems Development <br/>
-            Robotics <br/>
-            Artificial Intelligence & Machine Learning <br/>
-            Technical Security & Privacy <br/>
-          </div>
-          <br/>
-          I'm also very excited about working in <b>Research</b> and am actively seeking <b>URAs</b> and other opportunities to learn more! <br/>
-
-
-          <br/> <br/>
-          <h3> My Hobbies & Interets </h3> <br/>
-
-          <div className='centred-list'>
-           Speedcubing <br/>
-           Board Games <br/>
-           Volleyball <br/>
-           Pokemon <br/>
-           Marvel <br/>
-           TV Shows + Movies + Anime :P <br/>
-
-          </div>
-
-          <br/> <br/>
-          <h3> My Core Values </h3> <br/>
-
-          <Row className='values'>
-            <Col sm={4} className='value-container'>
-                <div className='value-card'>
-                  <div className='value-image'>
-                    <img src={sapling} alt=''/>
-                  </div>
-                  <div className='value-content'>
-                    <h4>Sustainability</h4>
-                    <p> is what I value above all. I am always thinking of new ways that we can work towards the UN SDGs.</p>
-                  </div>
-                </div>
-            </Col>
-            <Col sm={4} className='value-container'>
-                <div className='value-card'>
-                  <div className='value-image-bulb'>
-                    <img src={bulb} alt=''/>
-                  </div>
-                  <div className='value-content'>
-                    <h4>Innovation</h4>
-                    <p>  is very important for any individual. New ideas and ways of thinking are what drives our world forward. </p>
-                  </div>
-                </div>
-            </Col>
-            <Col sm={4} className='value-container'>
-                <div className='value-card'>
-                  <div className='value-image-learn'>
-                    <img src={learn} alt=''/>
-                  </div>
-                  <div className='value-content'>
-                    <h4>Lifelong Learning </h4>
-                    <p> always appealed to me as someone who loves to learn. Is responsible for my interest in research.  </p>
-                  </div>
-                </div> 
-            </Col>
-          </Row>
-
-
-          <br/><br/>
-          You can find me on my Social Media! <br/>
-          Feel free to reach out anytime! I would love to talk! <br/>
-
-          <br/>
-        </p>
-      </div>
+export const About = () => (
+  <section className="page-section about-page"><Container>
+    <div className="about-intro">
+      <div><h1>About me</h1><p className="lead-copy">I grew up in Singapore, spent a few years in India, and moved to Canada for university.</p><p>I'm studying Computer Science at Waterloo, specializing in AI, and graduating in April 2027.</p><p>Outside work, I like speedcubing, board games, and volleyball. I also watch a lot of TV, movies, and anime, with Pokémon and Marvel in the mix.</p><a className="text-link" href="mailto:k2kochar@uwaterloo.ca">k2kochar@uwaterloo.ca <ArrowUpRight aria-hidden="true" /></a></div>
+      <div className="portrait-wrap"><img src={portrait} alt="Krish Kochar" width="320" height="320" /><span>Singapore → India → Canada</span></div>
     </div>
-  )
-}
+    <section className="about-offline" aria-labelledby="outside-heading">
+      <div><h2 id="outside-heading">Outside work</h2><dl className="personal-details"><div><dt>Speedcubing</dt><dd>My personal best is <strong>11.5 seconds.</strong></dd></div><div><dt>Board games</dt><dd>My favourite is probably <strong>Brass: Birmingham.</strong></dd></div><div><dt>This website</dt><dd>I built the original by hand a few years ago. Black is my favourite colour, and I love cats.</dd></div></dl></div>
+      <img src={cats} alt="Three illustrated cats" width="230" height="235" loading="lazy" />
+    </section>
+  </Container></section>
+);

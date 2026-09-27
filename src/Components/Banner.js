@@ -1,81 +1,25 @@
-import React from 'react'
-import { Container, Row, Col } from 'react-bootstrap'
-import { ArrowRightCircle } from 'react-bootstrap-icons'
-import { useState, useEffect } from 'react'
-import headImage from '../Assets/Images/coder_desk.png'
-import resume from '../Assets/Documents/krish-resume.pdf'
+import React from 'react';
+import { Container } from 'react-bootstrap';
+import { ArrowRight, ArrowUpRight } from 'react-bootstrap-icons';
+import { Link } from 'react-router-dom';
+import cat from '../Assets/Images/footer_cat.png';
+import resume from '../Assets/Documents/krish-resume.pdf';
+import { Typewriter } from './Typewriter';
 
-export const Banner = () => {
-
-    const [loopNum, setLoopNum] = useState(0)
-    const [isDeleting, setIsDeleting] = useState(false)
-
-    const toRotate = ["Software Engineer", "Systems Engineer", "Security Engineer"]
-
-    const [text, setText] = useState('')
-    const [delta, setDelta] = useState(300 - Math.random() * 100)
-    const period = 2000
-
-    useEffect(() => {
-        let ticker = setInterval(() => {
-          tick();
-        }, delta);
-    
-        return () => { clearInterval(ticker) };
-    // eslint-disable-next-line
-      }, [text])
-
-    const tick = () => {
-        let i = loopNum % toRotate.length
-        let fullText = toRotate[i]
-        let updatedText = isDeleting ? fullText.substring(0, text.length - 1) : fullText.substring(0, text.length + 1)
-
-        setText(updatedText)
-
-        if (isDeleting) {
-            setDelta(prevDelta => prevDelta / 1.8)
-        }
-    
-        if (!isDeleting && updatedText === fullText) {
-            setIsDeleting(true)
-            setDelta(period)
-        } else if (isDeleting && updatedText === '') {
-            setIsDeleting(false)
-            setLoopNum(loopNum + 1)
-            setDelta(200)
-        }
-    }
-
-
-  return (
-    <section className='banner' id='home'>
-        <Container>
-            <Row className='align-items-center'>
-                <Col xs={12} md={6} xl={7}>
-                    <span className='tagline'> Welcome to my Portfolio! </span>
-                    <h1>{`Hi, My name is Krish`} <br/> 
-                    <span>
-                        <span className='wrap'> I'm a {text} </span> 
-                        <span className='wrap blinking-cursor'> | </span>
-                    </span>
-                    </h1>
-                    <p> I'm a Computer Science student at the University of Waterloo. I'm in my 4A term and am 
-                        seeking Co-op opportunities for 2026. I love making new things and am exploring my interest in the
-                        fields of Systems Development, Robotics, AI and Security. Feel free to
-                        get in touch with me anytime! 
-                    </p>
-                    <button id='myButton' type='button' className="btn btn-dark" onClick={() => {
-                        window.open(resume); 
-                        return true;}
-                    } target='_blank'> 
-                        <span> Check out my Resume! </span> <ArrowRightCircle size={25}/> 
-                    </button>
-                </Col>
-                <Col xs={12} md={6} xl={5}>
-                    <img src={headImage} alt="Header Img"/>
-                </Col>
-            </Row>
-        </Container>
-    </section>
-  )
-}
+export const Banner = () => (
+  <section className="banner" id="home">
+    <Container className="hero-grid">
+      <div className="hero-copy">
+        <h1>Hi, I'm Krish<span className="accent">.</span></h1>
+        <Typewriter />
+        <p>I study Computer Science at the University of Waterloo.</p>
+        <p className="hero-note">I've worked on AI infrastructure at Atlassian, robot fleets at OTTO, and privacy research at Waterloo.</p>
+        <div className="hero-actions">
+          <Link className="button button-primary" to="/projects">Projects <ArrowRight aria-hidden="true" /></Link>
+          <a className="button button-secondary" href={resume} target="_blank" rel="noreferrer">Résumé <ArrowUpRight aria-hidden="true" /></a>
+        </div>
+      </div>
+      <div className="hero-art"><img src={cat} alt="A sleeping cat" width="240" height="240" /></div>
+    </Container>
+  </section>
+);

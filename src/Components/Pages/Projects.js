@@ -1,193 +1,31 @@
-import React from 'react'
-import { Container, Row, Col } from 'react-bootstrap'
-import portfolio_img from '../../Assets/Images/portfolio.png';
-import giphygram from '../../Assets/Images/giphygram.png';
-import finvest_advsior from '../../Assets/Images/finvestadvisor.png';
-import raiinet from '../../Assets/Images/raiinet.png';
-import pycc1 from '../../Assets/Images/pycc1.png';
-import procMon from '../../Assets/Images/procMon.png';
-import bookstore from '../../Assets/Images/bookdraft.png';
-import oracle from '../../Assets/Images/oracle-image.png';
+import React from 'react';
+import { Container } from 'react-bootstrap';
+import { Github, ArrowUpRight } from 'react-bootstrap-icons';
+import { projects } from '../../data/projects';
+import { ProjectScreenshot } from '../ProjectScreenshot';
 
-export const Projects = () => {
-
-
-  return (
-    <section className='projects-page'>
-      <Container>
-        <h1> My Projects </h1>
-        <Row className='project-row'>
-          <Col sm={6}>
-            <div className="project-container">
-              <div className="thecard">
-                <div className='project-front'>
-                  <article className='portolio-item'>
-                    <div className='portfolio-item-image'>
-                      <div className='image-wrap'>
-                        <img className='p-image' src={oracle} alt=""/>
-                        <p className='portfolio-item-desc'> Python. FastAPI, Cerebras, <br/> Ollama, ChromaDB, Typescript </p>
-                      </div>
-                    </div>
-                    <h3> Oracle - AI Code Review Buddy </h3>
-                    <div className='portfolio-item-btns'>
-                      <a href='https://github.com/Krish-310/aura' className='btn btn-outline-dark' target='_blank'> Github </a>
-                    </div>
-                  </article>
-                </div> 
-              </div>
-            </div>
-          </Col>
-          <Col sm={6}>
-            <div className="project-container">
-              <div className="thecard">
-                <div className='project-front'>
-                  <article className='portolio-item'>
-                    <div className='portfolio-item-image'>
-                    <div className='image-wrap'>
-                        <img className='p-image' src={finvest_advsior} alt=""/>
-                        <p className='portfolio-item-desc'> Python, Streamlit, <br/> Numpy, Pandas </p>
-                      </div>
-                    </div>
-                    <h3> Finvest Advisor </h3>
-                    <div className='portfolio-item-btns'>
-                      <a href='https://github.com/Krish-310/Finvest-Advisor-HTV8' className='btn btn-outline-dark' target='_blank'> Github </a>
-                      <a href='https://finvestadvisor.streamlit.app/' className='btn btn-outline-primary' target='_blank'> Project </a>
-                    </div>
-                  </article>
-                </div> 
-              </div>
-            </div>
-          </Col>
-        </Row>
-        <Row className='project-row'>
-          <Col sm={6}>
-            <div className="project-container">
-              <div className="thecard">
-                <div className='project-front'>
-                  <article className='portolio-item'>
-                    <div className='portfolio-item-image'>
-                    <div className='image-wrap'>
-                        <img className='p-image' src={raiinet} alt=""/>
-                        <p className='portfolio-item-desc'> C++, Xlib, UML </p>
-                      </div>
-                    </div>
-                    <h3> RAIInet </h3>
-                    <div className='portfolio-item-btns'>
-                    <a href='https://github.com/Krish-310/RAIInet-public' className='btn btn-outline-dark' target="_blank"> Github </a>
-                    </div>
-                  </article>
-                </div> 
-              </div>
-            </div>
-          </Col>
-          <Col sm={6}>
-            <div className="project-container">
-              <div className="thecard">
-                <div className='project-front'>
-                  <article className='portolio-item'>
-                    <div className='portfolio-item-image'>
-                    <div className='image-wrap'>
-                        <img className='p-image' src={procMon} alt=""/>
-                        <p className='portfolio-item-desc'> C++, libproc, mach, ncurses </p>
-                      </div>
-                    </div>
-                    <h3> Process Monitor </h3>
-                    <div className='portfolio-item-btns'>
-                      <a href='https://github.com/Krish-310/Process-Monitor' className='btn btn-outline-dark' target='_blank'> Github </a>
-                    </div>
-                  </article>
-                </div> 
-              </div>
-            </div>
-          </Col>
-        </Row>
-        <Row className='project-row'>
-          <Col sm={6}>
-              <div className="project-container">
-                <div className="thecard">
-                  <div className='project-front'>
-                    <article className='portolio-item'>
-                      <div className='portfolio-item-image'>
-                      <div className='image-wrap'>
-                          <img className='p-image' src={bookstore} alt=""/>
-                          <p className='portfolio-item-desc'> NodeJS, Express,js, React, <br/> MongoDB, AWS </p>
-                        </div>
-                      </div>
-                      <h3> Used Book Store </h3>
-                      <div className='portfolio-item-btns'>
-                        <a href='https://github.com/Krish-310/Used-Book-Store' className='btn btn-outline-dark' target='_blank'> Github </a>
-                      </div>
-                    </article>
-                  </div> 
-                </div>
-              </div>
-            </Col>
-            <Col sm={6}>
-              <div className="project-container">
-                <div className="thecard">
-                  <div className='project-front'>
-                    <article className='portolio-item'>
-                      <div className='portfolio-item-image'>
-                      <div className='image-wrap'>
-                          <img className='p-image' src={pycc1} alt=""/>
-                          <p className='portfolio-item-desc'> Python, APIs, Tkinter </p>
-                        </div>
-                      </div>
-                      <h3> Python Currency Converter </h3>
-                      <div className='portfolio-item-btns'>
-                        <a href='https://github.com/Krish-310/Python-Currency-Converter' className='btn btn-outline-dark' target='_blank'> Github </a>
-                      </div>
-                    </article>
-                  </div> 
-                </div>
-              </div>
-            </Col>
-        </Row>
-        <Row className='project-row'>
-          <Col sm={6}>
-            <div className="project-container">
-              <div className="thecard">
-                <div className='project-front'>
-                  <article className='portolio-item'>
-                    <div className='portfolio-item-image'>
-                    <div className='image-wrap'>
-                        <img className='p-image' src={giphygram} alt=""/>
-                        <p className='portfolio-item-desc'> Javascript, PWA, HTML, CSS </p>
-                      </div>
-                    </div>
-                    <h3> Giphygram PWA </h3>
-                    <div className='portfolio-item-btns'>
-                      <a href='https://github.com/Krish-310/Giphygram-Project' className='btn btn-outline-dark' target='_blank'> Github </a>
-                      <a href='https://krish-310.github.io/Giphygram-Project/' className='btn btn-outline-primary' target='_blank'> Project </a>
-                    </div>
-                  </article>  
-                </div> 
-              </div>
-            </div>
-          </Col>
-          <Col sm={6}>
-            <div className="project-container">
-              <div className="thecard">
-                <div className='project-front'>
-                  <article className='portolio-item'>
-                    <div className='portfolio-item-image'>
-                      <div className='image-wrap'>
-                        <img className='p-image' src={portfolio_img} alt=""/>
-                        <p className='portfolio-item-desc'> ReactJS, CSS, Bootstrap, <br/> NodeJS, Express.js </p>
-                      </div>
-                    </div>
-                    <h3> Personal Portfolio Website </h3>
-                    <div className='portfolio-item-btns'>
-                      <a href='https://github.com/Krish-310/Personal-Portfolio-Website' className='btn btn-outline-dark' target='_blank'> Github </a>
-                      <a href='https://krishkochar.com' className='btn btn-outline-primary' target='_blank'> Project </a>
-                    </div>
-                  </article>
-                </div> 
-              </div>
-            </div>
-          </Col>
-        </Row>
-      </Container>
-    </section>
-  )
-}
+export const Projects = () => (
+  <section className="page-section projects-page">
+    <Container>
+      <header className="page-heading"><h1>Projects</h1></header>
+      <div className="project-studies">{projects.filter(project => project.featured).map(project => (
+        <article className="project-study" id={project.id} key={project.id} aria-labelledby={`${project.id}-title`}>
+          <div className="study-images">
+            <ProjectScreenshot src={project.image} alt={`${project.title} screenshot`} />
+            {project.secondaryImage && <ProjectScreenshot className="secondary-screenshot" src={project.secondaryImage} alt={`${project.title} terminal interface`} />}
+          </div>
+          <div className="study-copy">
+            <h2 id={`${project.id}-title`}>{project.title}</h2><p className="study-description">{project.description}</p>
+            {project.notes.map(note => <div className="project-note" key={note.title}><h3>{note.title}</h3><p>{note.text}</p></div>)}
+            <p className="study-stack">{project.tags.join(' · ')}</p>
+            <a className="text-link" href={project.github} target="_blank" rel="noreferrer"><Github aria-hidden="true" />{project.sourceLabel || 'Source on GitHub'} <ArrowUpRight aria-hidden="true" /></a>
+          </div>
+        </article>
+      ))}</div>
+      <section className="earlier-projects" aria-labelledby="earlier-heading">
+        <h2 id="earlier-heading">Earlier projects</h2>
+        <ul className="project-archive">{projects.filter(project => !project.featured).map(project => <li key={project.id}><div><h3>{project.title}</h3><p>{project.description}</p></div><div className="archive-links"><a href={project.github} target="_blank" rel="noreferrer" aria-label={`${project.title} on GitHub`}>GitHub <ArrowUpRight aria-hidden="true" /></a>{project.demo && <a href={project.demo} target="_blank" rel="noreferrer" aria-label={`${project.title} live demo`}>Demo <ArrowUpRight aria-hidden="true" /></a>}</div></li>)}</ul>
+      </section>
+    </Container>
+  </section>
+);

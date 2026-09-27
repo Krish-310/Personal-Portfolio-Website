@@ -1,71 +1,83 @@
-import React from 'react'
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import { useState, useEffect } from 'react';
-import navIcon1 from '../Assets/Images/nav-icon1.svg'
-import Logo from '../Assets/Images/Krish_black_cat.png'
-import instagram from '../Assets/Images/insta.svg'
+import React, { useEffect, useRef, useState } from 'react';
+import { Container, Nav, Navbar } from 'react-bootstrap';
+import { NavLink, Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
-import github from '../Assets/Images/github-mark-white.svg'
-
+import { Github, Linkedin, Instagram, List, X, ChevronRight } from 'react-bootstrap-icons';
+import Logo from '../Assets/Images/Krish_black_cat.png';
 
 export const NavBar = () => {
-
-    const [activeLink, setActiveLink] = useState('home')
-    const [scrolled, setScrolled] = useState(false)
-
-    useEffect( () => {
-        const onScroll = () => {
-            if (window.scrollY > 50) {
-                setScrolled(true)
-            } else {
-                setScrolled(false)
-            }
-        }
-
-        window.addEventListener("scroll", onScroll)
-
-        return () => window.removeEventListener("scroll", onScroll)
-
-    }, [])
-
-    const onUpdateActiveLink = (value) => {
-        setActiveLink(value)
-    }
-
-
-    return (
-        <Navbar expand="lg" className={scrolled ? 'scrolled': ''}>
-        <Container>
-                <Navbar.Brand href="/">
-                        <img className="logo-image" src={Logo} alt="Logo" />
-                </Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" >
-                <span className='navbar-toggler-icon'> </span>
-            </Navbar.Toggle>
-            <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">
-                <Nav.Link href="/" className={activeLink === 'home' ? 'active-navbar-link': 'navbar-link'} onClick={() => onUpdateActiveLink('home')} > Home </Nav.Link>
-                <Nav.Link href="/skills"className={activeLink === 'skills' ? 'active-navbar-link': 'navbar-link'} onClick={() => onUpdateActiveLink('skills')} > Skills </Nav.Link>
-                <Nav.Link href="/projects" className={activeLink === 'projects' ? 'active-navbar-link': 'navbar-link'} onClick={() => onUpdateActiveLink('projects')} > Projects </Nav.Link>
-                <Nav.Link href="/career" className={activeLink === 'career' ? 'active-navbar-link': 'navbar-link'} onClick={() => onUpdateActiveLink('career')} > Career </Nav.Link>
-                <Nav.Link href="/about" className={activeLink === 'about-me' ? 'active-navbar-link': 'navbar-link'} onClick={() => onUpdateActiveLink('about-me')} > About Me </Nav.Link>
-            </Nav>
-            <span className='navbar-text'>
-                <div className='social-icon'>
-                    <a href='http://www.linkedin.com/in/krish310/'> <img src={navIcon1} alt=''/> </a>
-                    <a href='https://www.instagram.com/krishy_310/'> <img src={instagram} alt=''/> </a>
-                    <a href='https://github.com/Krish-310'> <img src={github} alt=''/> </a>
-                </div>
-                    <HashLink to='/#connect'>
-                    <button className='vvd' onClick={() => console.log("connect")}> 
-                        <span> Let's Connect </span> 
-                    </button>
-                    </HashLink>
-            </span>
-            </Navbar.Collapse>
-        </Container>
-        </Navbar>
-    )
-}
+  const [expanded, setExpanded] = useState(false);
+  const navbar = useRef(null);
+  const toggle = useRef(null);
+  const closing = useRef(false);
+  const pendingScroll = useRef(null);
+  useEffect(() => {
+    if (!expanded) return;
+    const dismiss = () => {
+      closing.current = true;
+      setExpanded(false);
+    };
+    const onKeyDown = event => {
+      if (event.key === 'Escape') {
+        dismiss();
+        toggle.current?.focus();
+      }
+    };
+    const onPointerDown = event => {
+      if (!navbar.current?.contains(event.target)) dismiss();
+    };
+    const onFocusIn = event => {
+      if (!navbar.current?.contains(event.target)) dismiss();
+    };
+    const desktop = window.matchMedia?.('(min-width: 992px)');
+    const onResize = event => { if (event.matches) dismiss(); };
+    document.addEventListener('keydown', onKeyDown);
+    document.addEventListener('pointerdown', onPointerDown);
+    document.addEventListener('focusin', onFocusIn);
+    desktop?.addEventListener('change', onResize);
+    return () => {
+      document.removeEventListener('keydown', onKeyDown);
+      document.removeEventListener('pointerdown', onPointerDown);
+      document.removeEventListener('focusin', onFocusIn);
+      desktop?.removeEventListener('change', onResize);
+    };
+  }, [expanded]);
+  const close = () => {
+    closing.current = expanded;
+    setExpanded(false);
+  };
+  const scrollToContact = element => {
+    if (closing.current) pendingScroll.current = element;
+    else element.scrollIntoView({ block: 'start' });
+  };
+  const finishClosing = () => {
+    closing.current = false;
+    pendingScroll.current?.scrollIntoView({ block: 'start' });
+    pendingScroll.current = null;
+  };
+  return (
+    <Navbar ref={navbar} expand="lg" expanded={expanded} onToggle={setExpanded} variant="dark" className="site-navbar">
+      <Container>
+        <Navbar.Brand as={Link} to="/" onClick={close} aria-label="Krish — home"><img className="logo-image" src={Logo} alt="Krish" width="180" height="48" /></Navbar.Brand>
+        <Navbar.Toggle ref={toggle} aria-controls="main-navigation" label={expanded ? 'Close menu' : 'Open menu'} aria-expanded={expanded}>
+          <span>{expanded ? 'Close' : 'Menu'}</span>{expanded ? <X aria-hidden="true" /> : <List aria-hidden="true" />}
+        </Navbar.Toggle>
+        <Navbar.Collapse id="main-navigation" onExited={finishClosing}>
+          <Nav className="main-nav">
+            {[["/", "Home"], ["/skills", "Skills"], ["/projects", "Projects"], ["/career", "Career"], ["/about", "About Me"]].map(([to, label]) => (
+              <Nav.Link key={to} as={NavLink} to={to} end={to === '/'} onClick={close}><span>{label}</span><span className="nav-current" aria-hidden="true">Current</span><ChevronRight className="nav-chevron" aria-hidden="true" /></Nav.Link>
+            ))}
+          </Nav>
+          <div className="nav-extras">
+            <div className="social-icon">
+              <a href="https://www.linkedin.com/in/krish310/" aria-label="LinkedIn"><Linkedin /></a>
+              <a href="https://www.instagram.com/krishy_310/" aria-label="Instagram"><Instagram /></a>
+              <a href="https://github.com/Krish-310" aria-label="GitHub"><Github /></a>
+            </div>
+            <HashLink className="button button-secondary nav-connect" to="/#connect" onClick={close} scroll={scrollToContact}>Let's connect <span aria-hidden="true">↗</span></HashLink>
+          </div>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+  );
+};
